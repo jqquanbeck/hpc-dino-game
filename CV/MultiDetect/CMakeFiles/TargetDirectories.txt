@@ -1,3 +1,0 @@
-/home/alhanshaw/Project/hpc-dino-game/CV/MultiDetect/CMakeFiles/rebuild_cache.dir
-/home/alhanshaw/Project/hpc-dino-game/CV/MultiDetect/CMakeFiles/edit_cache.dir
-/home/alhanshaw/Project/hpc-dino-game/CV/MultiDetect/CMakeFiles/MultiDetect.dir

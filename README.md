@@ -1,3 +1,8 @@
 # hpc-dino-game
 
-In main directory use script `./run`
+## Building the Project
+`mkdir build; cd build`
+`cmake ..`
+`make`
+
+Executables can be found in the build folder.
