@@ -58,6 +58,9 @@ int main()
     clock_t start, end;
     double executionTime;
 
+    int i = 0;
+    char filename[20];
+
     while (1)
     {
         start = clock();
@@ -68,6 +71,9 @@ int main()
         // maintain 60 fps
         end = clock();
         executionTime = ((double) (end - start)) / CLOCKS_PER_SEC;
+
+        sprintf(filename, "logs/img_%d.csv", i++);
+        writeXImage2csv(img, filename);
 
         uint sleepTime = (1.0/FPS - executionTime)*1000000;
         usleep(sleepTime);
