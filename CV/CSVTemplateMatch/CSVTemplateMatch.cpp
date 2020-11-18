@@ -11,92 +11,87 @@
 using namespace std;
 using namespace cv;
 
-Point TemplateMatch(Mat srcImg, Mat templImg) {
-	
+vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance) {
+	vector<Point> matchLocations;
+	Point tempLoc;
 	Mat result; //mat object to store the result of the template match algo	
 	int result_rows = srcImg.rows - templImg.rows + 1; //calculate result image rows
 	int result_cols = srcImg.cols - templImg.cols + 1; //calculate result image cols
 
 	result = Mat(result_rows, result_cols, CV_32FC1); //create mat to hold result of template match CV_8UC1
-	//result.create( result_rows, result_cols, CV_32FC1 );
   
 	matchTemplate(srcImg, templImg, result, TM_CCOEFF_NORMED); //perform template matching	TM_SQDIFF_NORMED
 
 	normalize(result, result, 0.0, 1.0, NORM_MINMAX); //normalize the result NORM_MINMAX
-	//normalize(result, result, 1.0, 0.0, NORM_MINMAX, -1, noArray() ); //normalize the result NORM_MINMAX
 	
-	//float max = result.at<float>(0,0);
-	//float min = result.at<float>(0,0);
 	cout.precision(5);
-	cout << "Result size: " << result.rows << "," << result.cols << "(rows,cols)" << endl;
+	//cout << "Result size: " << result.rows << "," << result.cols << "(rows,cols)" << endl;
 	
 	double minVal; double maxVal; Point minLoc; Point maxLoc; //localize the best match with minMaxLoc
 	minMaxLoc( result, &minVal, &maxVal, &minLoc, &maxLoc, Mat() );
 	
 	//Note: Though x is the column variable, and y is the row variable, openCV Mats are in the form of (y,x)
-	for (int x = 0; x < result.cols; x++)
-	{
-		for (int y = 0; y < result.rows; y++)
-		{
-			if(result.at<float>(y,x) >= 0.93)
-			{
-				cout << x+templImg.cols/2 << "," << y+templImg.rows/2 << ": " << result.at<float>(y,x) << endl;
+	for (int x = 0; x < result.cols; x++) {
+		for (int y = 0; y < result.rows; y++) {
+			if(result.at<float>(y,x) >= tolerance) {
+				//cout << x+templImg.cols/2 << "," << y+templImg.rows/2 << ": " << result.at<float>(y,x) << endl;
+				tempLoc.x = x+templImg.cols/2;
+				tempLoc.y = y+templImg.rows/2;
+				matchLocations.push_back(tempLoc);
 			}
-			/*
-			if(result.at<float>(x,y) >= max)
-			{
-				max = result.at<float>(x,y);
-			}
-			if(result.at<float>(x,y) <= min)
-			{
-				min = result.at<float>(x,y);
-			}
-			*/
-			
-			
-			
 		}
-		//cout << endl << endl;
 	}
 	
-	//cout << "Max: " << scientific << max << endl;
-	//cout << "Min: " << scientific << min << endl;
-
-	
-	
-	
-	cout<< "Max Val: " << scientific << maxVal << endl;
-	cout<< "Min Val: " << scientific << minVal << endl;
-	
-	Point matchLoc = minLoc; //for SQDIFF and SQDIFF_NORMED, the best matches are lower values. For all the other methods, the higher the better
-	matchLoc.x += templImg.cols/2; //center the match loc within the template
-	matchLoc.y += templImg.rows/2; //center the match loc within the template
-	return matchLoc;
+	return matchLocations;
 }
 
 int main() {
-
 	Mat CSVImg, templateImg; //Create two Mat objects, one for the source image, one for the template
 	Point matchPt; //Point object to hold match location
-	CSVImg = Mat(150, 600, CV_8UC1); //Create 150x600px mat made of uint8 
+	vector<Point> matchPts;
+	CSVImg = Mat(150, 600, CV_8UC1); //Create 150x600px mat made of uint8
 	string CSVstr; //Temp string to hold line from csv file
-	//ifstream myfile ("inputCSV/test_cacti1.csv"); //file to be opened
-	ifstream myfile ("inputCSV/test_multi_dino.csv"); //file to be opened
+	ofstream logfile("log.txt", ios::trunc); //log file name, truncated as to rewrite the log file each time the code is run
 	
-	if(myfile) { //if file is valid
-		for (int i=0; i<CSVImg.rows-1; i++) { //for each rows
-			for (int j=0; j<CSVImg.cols-1; j++) { //for each column
-				getline(myfile, CSVstr, ','); //get a line from the CSV up to the next comma
-				CSVImg.at<uchar>(i,j) = stoi(CSVstr); //save the data from the CSV into an int
+	for (int k = 0; k < 355; k++) {
+		
+		string filePath = "../Screenshots_Joel/"; //path string
+		string fileName = "img_" + to_string(k) + ".csv"; //create filename string
+		string fullFileName = filePath+fileName;
+		
+		ifstream myfile(fullFileName); //open csv
+		
+		if(myfile) { //if file is valid
+			for (int i=0; i<CSVImg.rows-1; i++) { //for each rows
+				for (int j=0; j<CSVImg.cols-1; j++) { //for each column
+					getline(myfile, CSVstr, ','); //get a line from the CSV up to the next comma
+					CSVImg.at<uchar>(i,j) = stoi(CSVstr); //save the data from the CSV into an int
+				}
 			}
 		}
+		else { //throw simple error if file isn't found
+			cout << "ERROR in reading file!" << endl;	
+		}
+		
+		if(k == 0) {//if statement to only write one png
+			imwrite("output/csvimg.png", CSVImg); //write the original image to PNG for debug
+		}
+		
+		templateImg = imread("templatePNG/dino_template.png", IMREAD_GRAYSCALE); //read the template image as a grayscale image
+		
+		matchPts = TemplateMatch(CSVImg, templateImg, 0.99); //match the read CSV image to the template
+		
+		logfile << "File path: " << filePath << endl;
+		for (int j = 0; j < matchPts.size(); j++) { //for all of the matched points
+			//printf("(%d, %d)\t", matchPts[i].x, matchPts[i].y);
+			logfile << fileName << ": ";
+			logfile << "(" <<  matchPts[j].x << "," << matchPts[j].y << ")   ";
+		}
+		logfile << "\n"; 
+		
+		myfile.close(); //Close file
 	}
 	
-	imwrite("output/csvimg.png", CSVImg); //write the original image to PNG for debug
-	templateImg = imread("templatePNG/dino_template.png", IMREAD_GRAYSCALE ); //read the template image as a grayscale image
-	matchPt = TemplateMatch(CSVImg, templateImg); //match the read CSV image to the template
-	printf("MatchLoc = %d, %d \n", matchPt.x, matchPt.y); //print location of matched template to console	
-	
-	myfile.close(); //Close file
+	logfile.close();
 	return EXIT_SUCCESS;
 }

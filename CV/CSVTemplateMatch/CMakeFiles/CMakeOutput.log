@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/3.18.0/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/3.18.0/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,23 +23,23 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/3.18.0/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/3.18.0/CompilerIdCXX/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp
+Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6413b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6413b.dir/build.make CMakeFiles/cmTC_6413b.dir/build
-gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_64819/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64819.dir/build.make CMakeFiles/cmTC_64819.dir/build
+gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccuNpGvm.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccfC5hpB.s
 GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -57,15 +57,15 @@ GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o /tmp/ccuNpGvm.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o /tmp/ccfC5hpB.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_6413b
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6413b.dir/link.txt --verbose=1
-/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -o cmTC_6413b 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_64819
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64819.dir/link.txt --verbose=1
+/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -o cmTC_64819 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -75,9 +75,9 @@ Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_6413b' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6413b /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_64819' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_64819 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
 
 
 
@@ -100,20 +100,20 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_6413b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6413b.dir/build.make CMakeFiles/cmTC_6413b.dir/build]
-  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_64819/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64819.dir/build.make CMakeFiles/cmTC_64819.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccuNpGvm.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccfC5hpB.s]
   ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -131,15 +131,15 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o /tmp/ccuNpGvm.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o /tmp/ccfC5hpB.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_6413b]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6413b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -o cmTC_6413b ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_64819]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64819.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -o cmTC_64819 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -149,8 +149,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_6413b' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6413b /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_64819' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_64819 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -162,7 +162,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6413b] ==> ignore
+    arg [cmTC_64819] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -178,7 +178,7 @@ Parsed C implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_6413b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_64819.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -208,20 +208,20 @@ Parsed C implicit link information from above output:
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp
+Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_dfeaf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dfeaf.dir/build.make CMakeFiles/cmTC_dfeaf.dir/build
-gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -v -o CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_5ebe3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5ebe3.dir/build.make CMakeFiles/cmTC_5ebe3.dir/build
+gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc5inS2w.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccuoSb8P.s
 GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -241,15 +241,15 @@ GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5inS2w.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuoSb8P.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_dfeaf
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfeaf.dir/link.txt --verbose=1
-/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dfeaf 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_5ebe3
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ebe3.dir/link.txt --verbose=1
+/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5ebe3 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -259,9 +259,9 @@ Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_dfeaf' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfeaf /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_5ebe3' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5ebe3 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
 
 
 
@@ -288,20 +288,20 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_dfeaf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dfeaf.dir/build.make CMakeFiles/cmTC_dfeaf.dir/build]
-  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_5ebe3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5ebe3.dir/build.make CMakeFiles/cmTC_5ebe3.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc5inS2w.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccuoSb8P.s]
   ignore line: [GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -321,15 +321,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5inS2w.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuoSb8P.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_dfeaf]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfeaf.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dfeaf ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_5ebe3]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ebe3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5ebe3 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -339,8 +339,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_dfeaf' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dfeaf /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_5ebe3' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5ebe3 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -352,7 +352,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_dfeaf] ==> ignore
+    arg [cmTC_5ebe3] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -368,7 +368,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_dfeaf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_5ebe3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -398,16 +398,16 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp
+Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_e5853/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5853.dir/build.make CMakeFiles/cmTC_e5853.dir/build
-gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e5853.dir/feature_tests.cxx.o
-/usr/bin/c++   -std=c++1y -o CMakeFiles/cmTC_e5853.dir/feature_tests.cxx.o -c /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e5853
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5853.dir/link.txt --verbose=1
-/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_e5853.dir/feature_tests.cxx.o -o cmTC_e5853 
-gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_8d8c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8d8c0.dir/build.make CMakeFiles/cmTC_8d8c0.dir/build
+gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8d8c0.dir/feature_tests.cxx.o
+/usr/bin/c++   -std=c++1y -o CMakeFiles/cmTC_8d8c0.dir/feature_tests.cxx.o -c /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8d8c0
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d8c0.dir/link.txt --verbose=1
+/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_8d8c0.dir/feature_tests.cxx.o -o cmTC_8d8c0 
+gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
 
 
 
@@ -469,20 +469,20 @@ gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTempl
     Feature record: CXX_FEATURE:0cxx_return_type_deduction
     Feature record: CXX_FEATURE:0cxx_variable_templates
 Detecting C OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp
+Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_e1744/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1744.dir/build.make CMakeFiles/cmTC_e1744.dir/build
-gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o
-/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Run Build Command(s):/usr/bin/gmake cmTC_3c806/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c806.dir/build.make CMakeFiles/cmTC_3c806.dir/build
+gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o
+/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccQoZADK.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc80ylyT.s
 GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -500,15 +500,15 @@ GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o /tmp/ccQoZADK.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o /tmp/cc80ylyT.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking C executable cmTC_e1744
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1744.dir/link.txt --verbose=1
-/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -o cmTC_e1744  -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking C executable cmTC_3c806
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c806.dir/link.txt --verbose=1
+/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -o cmTC_3c806  -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -519,28 +519,28 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
 Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_e1744' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e1744 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_3c806' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c806 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
 
 
 
 Parsed C OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_e1744/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1744.dir/build.make CMakeFiles/cmTC_e1744.dir/build]
-  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o]
-  ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_3c806/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c806.dir/build.make CMakeFiles/cmTC_3c806.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o]
+  ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccQoZADK.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc80ylyT.s]
   ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -558,15 +558,15 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o /tmp/ccQoZADK.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o /tmp/cc80ylyT.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking C executable cmTC_e1744]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1744.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -o cmTC_e1744  -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking C executable cmTC_3c806]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c806.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -o cmTC_3c806  -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -577,8 +577,8 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_e1744' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e1744 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_3c806' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c806 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -590,7 +590,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e1744] ==> ignore
+    arg [cmTC_3c806] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -606,7 +606,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_e1744.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_3c806.dir/OpenMPTryFlag.c.o] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
@@ -638,20 +638,20 @@ Parsed C OpenMP implicit link information from above output:
 
 
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp
+Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_00a13/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00a13.dir/build.make CMakeFiles/cmTC_00a13.dir/build
-gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o
-/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_59e2d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59e2d.dir/build.make CMakeFiles/cmTC_59e2d.dir/build
+gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccXrIulR.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccooEkIo.s
 GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -671,15 +671,15 @@ GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o /tmp/ccXrIulR.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o /tmp/ccooEkIo.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking CXX executable cmTC_00a13
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00a13.dir/link.txt --verbose=1
-/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -o cmTC_00a13  -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_59e2d
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59e2d.dir/link.txt --verbose=1
+/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -o cmTC_59e2d  -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -690,28 +690,28 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
 Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_00a13' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00a13 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_59e2d' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59e2d /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_00a13/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00a13.dir/build.make CMakeFiles/cmTC_00a13.dir/build]
-  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_59e2d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59e2d.dir/build.make CMakeFiles/cmTC_59e2d.dir/build]
+  ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccXrIulR.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/Test/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccooEkIo.s]
   ignore line: [GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -731,15 +731,15 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o /tmp/ccXrIulR.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o /tmp/ccooEkIo.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_00a13]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00a13.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -o cmTC_00a13  -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_59e2d]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59e2d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -o cmTC_59e2d  -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -750,8 +750,8 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_00a13' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00a13 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_59e2d' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_59e2d /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -763,7 +763,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_00a13] ==> ignore
+    arg [cmTC_59e2d] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -779,7 +779,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_00a13.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_59e2d.dir/OpenMPTryFlag.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgomp] ==> lib [gomp]
@@ -838,18 +838,18 @@ The CXX compiler identification is GNU, found in "/home/alhanshaw/Project/hpc-di
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_11e32/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11e32.dir/build.make CMakeFiles/cmTC_11e32.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_049f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_049f7.dir/build.make CMakeFiles/cmTC_049f7.dir/build
 gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc3FS0px.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccNyzTB7.s
 GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -867,15 +867,15 @@ GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o /tmp/cc3FS0px.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o /tmp/ccNyzTB7.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_11e32
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11e32.dir/link.txt --verbose=1
-/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -o cmTC_11e32 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_049f7
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_049f7.dir/link.txt --verbose=1
+/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -o cmTC_049f7 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -885,8 +885,8 @@ Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_11e32' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_11e32 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_049f7' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_049f7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
 
 
@@ -912,18 +912,18 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_11e32/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_11e32.dir/build.make CMakeFiles/cmTC_11e32.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_049f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_049f7.dir/build.make CMakeFiles/cmTC_049f7.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc3FS0px.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccNyzTB7.s]
   ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -941,15 +941,15 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o /tmp/cc3FS0px.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o /tmp/ccNyzTB7.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_11e32]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11e32.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -o cmTC_11e32 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_049f7]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_049f7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -o cmTC_049f7 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -959,8 +959,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_11e32' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_11e32 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_049f7' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_049f7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -972,7 +972,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_11e32] ==> ignore
+    arg [cmTC_049f7] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -988,7 +988,7 @@ Parsed C implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_11e32.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_049f7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -1020,18 +1020,18 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_1614c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1614c.dir/build.make CMakeFiles/cmTC_1614c.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_276a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_276a0.dir/build.make CMakeFiles/cmTC_276a0.dir/build
 gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -v -o CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccyXl7Sy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cco2fMlj.s
 GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -1051,15 +1051,15 @@ GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccyXl7Sy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cco2fMlj.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_1614c
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1614c.dir/link.txt --verbose=1
-/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1614c 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_276a0
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_276a0.dir/link.txt --verbose=1
+/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_276a0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -1069,8 +1069,8 @@ Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_1614c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1614c /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_276a0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_276a0 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
 
 
@@ -1100,18 +1100,18 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_1614c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1614c.dir/build.make CMakeFiles/cmTC_1614c.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_276a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_276a0.dir/build.make CMakeFiles/cmTC_276a0.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccyXl7Sy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /gpfs/shared/apps_local/cmake/3.18.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cco2fMlj.s]
   ignore line: [GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -1131,15 +1131,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccyXl7Sy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cco2fMlj.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_1614c]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1614c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1614c ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_276a0]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_276a0.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -v -rdynamic CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_276a0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -1149,8 +1149,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_1614c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1614c /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-v' '-rdynamic' '-o' 'cmTC_276a0' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_276a0 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -1162,7 +1162,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1614c] ==> ignore
+    arg [cmTC_276a0] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -1178,7 +1178,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_1614c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_276a0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -1210,13 +1210,13 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_e54a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e54a3.dir/build.make CMakeFiles/cmTC_e54a3.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_228a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_228a3.dir/build.make CMakeFiles/cmTC_228a3.dir/build
 gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e54a3.dir/feature_tests.cxx.o
-/usr/bin/c++   -std=c++1y -o CMakeFiles/cmTC_e54a3.dir/feature_tests.cxx.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e54a3
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e54a3.dir/link.txt --verbose=1
-/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_e54a3.dir/feature_tests.cxx.o -o cmTC_e54a3 
+Building CXX object CMakeFiles/cmTC_228a3.dir/feature_tests.cxx.o
+/usr/bin/c++   -std=c++1y -o CMakeFiles/cmTC_228a3.dir/feature_tests.cxx.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_228a3
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_228a3.dir/link.txt --verbose=1
+/usr/bin/c++ -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_228a3.dir/feature_tests.cxx.o -o cmTC_228a3 
 gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
 
 
@@ -1281,18 +1281,18 @@ gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTe
 Detecting C OpenMP compiler ABI info compiled with the following output:
 Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_2af84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2af84.dir/build.make CMakeFiles/cmTC_2af84.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_907da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_907da.dir/build.make CMakeFiles/cmTC_907da.dir/build
 gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o
-/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Building C object CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o
+/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccdKZYMY.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccQ5rcUN.s
 GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -1310,15 +1310,15 @@ GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o /tmp/ccdKZYMY.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o /tmp/ccQ5rcUN.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking C executable cmTC_2af84
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2af84.dir/link.txt --verbose=1
-/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -o cmTC_2af84  -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking C executable cmTC_907da
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_907da.dir/link.txt --verbose=1
+/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -o cmTC_907da  -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -1329,8 +1329,8 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
 Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_2af84' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2af84 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_907da' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_907da /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
 
 
@@ -1339,18 +1339,18 @@ Parsed C OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_2af84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2af84.dir/build.make CMakeFiles/cmTC_2af84.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_907da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_907da.dir/build.make CMakeFiles/cmTC_907da.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o]
-  ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Building C object CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o]
+  ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccdKZYMY.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/ccQ5rcUN.s]
   ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -1368,15 +1368,15 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: c0b461ba69dba093bfc939a7fa8b7724]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o /tmp/ccdKZYMY.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o /tmp/ccQ5rcUN.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking C executable cmTC_2af84]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2af84.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -o cmTC_2af84  -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking C executable cmTC_907da]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_907da.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -o cmTC_907da  -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -1387,8 +1387,8 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_2af84' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2af84 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_907da' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_907da /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -1400,7 +1400,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2af84] ==> ignore
+    arg [cmTC_907da] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -1416,7 +1416,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_2af84.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_907da.dir/OpenMPTryFlag.c.o] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
@@ -1450,18 +1450,18 @@ Parsed C OpenMP implicit link information from above output:
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
 Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_fb5a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb5a9.dir/build.make CMakeFiles/cmTC_fb5a9.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_9863e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9863e.dir/build.make CMakeFiles/cmTC_9863e.dir/build
 gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o
-/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Building CXX object CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/cc6o8nc9.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccHmyO4W.s
 GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -1481,15 +1481,15 @@ GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o /tmp/cc6o8nc9.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o /tmp/ccHmyO4W.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking CXX executable cmTC_fb5a9
-/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb5a9.dir/link.txt --verbose=1
-/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -o cmTC_fb5a9  -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_9863e
+/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9863e.dir/link.txt --verbose=1
+/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -o cmTC_9863e  -v 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -1500,8 +1500,8 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
 Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_fb5a9' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb5a9 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_9863e' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9863e /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: Leaving directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp'
 
 
@@ -1510,18 +1510,18 @@ Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_fb5a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb5a9.dir/build.make CMakeFiles/cmTC_fb5a9.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_9863e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9863e.dir/build.make CMakeFiles/cmTC_9863e.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -c /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/cc6o8nc9.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/alhanshaw/Project/hpc-dino-game/CV/CSVTemplateMatch/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccHmyO4W.s]
   ignore line: [GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-36) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -1541,15 +1541,15 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-36)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 716696aeb8e1265fe923bf392b1dfb5e]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o /tmp/cc6o8nc9.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o /tmp/ccHmyO4W.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-41.base.el7_7.1]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_fb5a9]
-  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb5a9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -o cmTC_fb5a9  -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_9863e]
+  ignore line: [/gpfs/shared/apps_local/cmake/3.18.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9863e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -fopenmp -v -L/gpfs/shared/apps_local/gcc/5.5.0/lib64  -rdynamic CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -o cmTC_9863e  -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -1560,8 +1560,8 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/:/cm/shared/apps/slurm/18.08.4/lib64/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/gpfs/shared/apps_local/gcc/5.5.0/lib64/:/gpfs/shared/apps_local/spack/0.12.0/lib/:/cm/shared/apps/slurm/18.08.4/lib64/slurm/:/cm/shared/apps/slurm/18.08.4/lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_fb5a9' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb5a9 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-L/gpfs/shared/apps_local/gcc/5.5.0/lib64' '-rdynamic' '-o' 'cmTC_9863e' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9863e /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64/../lib64 -L/cm/shared/apps/slurm/18.08.4/lib64/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/gpfs/shared/apps_local/gcc/5.5.0/lib64 -L/gpfs/shared/apps_local/spack/0.12.0/lib -L/cm/shared/apps/slurm/18.08.4/lib64/slurm -L/cm/shared/apps/slurm/18.08.4/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -1573,7 +1573,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fb5a9] ==> ignore
+    arg [cmTC_9863e] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -1589,7 +1589,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64/slurm] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64/slurm]
     arg [-L/cm/shared/apps/slurm/18.08.4/lib64] ==> dir [/cm/shared/apps/slurm/18.08.4/lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_fb5a9.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9863e.dir/OpenMPTryFlag.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgomp] ==> lib [gomp]
