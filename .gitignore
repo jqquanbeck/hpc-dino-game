@@ -56,3 +56,6 @@ logs/*
 
 # Build directory
 build/*
+
+# CmakeFiles
+CMakeFiles/*
