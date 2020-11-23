@@ -14,6 +14,6 @@
 
 using namespace cv;
 
-Point MatchingMethod(Mat srcImg, Mat templImg);
+vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance);
 
 #endif
