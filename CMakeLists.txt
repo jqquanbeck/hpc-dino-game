@@ -1,10 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
-project( DisplayImage )
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( CSVTemplateMatch CSVTemplateMatch.cpp )
-target_link_libraries( CSVTemplateMatch ${OpenCV_LIBS} )
-find_package(OpenMP)
-if(OpenMP_CXX_FOUND)
-    target_link_libraries(CSVTemplateMatch PUBLIC OpenMP::OpenMP_CXX)
-endif()
+﻿# CMakeList.txt : Top-level CMake project file, do global configuration
+# and include sub-projects here.
+#
+cmake_minimum_required(VERSION "3.17" FATAL_ERROR)
+
+project ("Dinoai")
+
+# Include sub-projects.
+add_subdirectory("Dinoai")
