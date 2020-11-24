@@ -47,3 +47,24 @@ vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance) {
 	
 	return matchLocations;
 }
+
+bool isNight(Mat Img)
+{
+	//Samples are (413,25), (422, 22), and (407,20)
+	//These lie between the H and I, in the crook of the I, and in the crook of the H, respectively
+	int coords[][2] = { {413, 25}, {422, 22}, {407, 20} };
+	int avg = 0;
+	int numPoints = (int)( sizeof(coords) / sizeof(coords[0]) );
+	
+	for (int i = 0; i < numPoints; i++) {
+		avg += (int)Img.at<uchar>( coords[i][1], coords[i][0] );
+	}
+	avg = avg/numPoints;
+	
+	if(avg <= 128) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}

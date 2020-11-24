@@ -14,6 +14,8 @@
 
 using namespace cv;
 
-vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance);
+std::vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance);
+
+bool isNight(Mat Img);
 
 #endif
