@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build Project",
+            "dependsOn": ["Build Main", "Build Inputlib"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+		},
+		{
+            "type": "shell",
+            "label": "Build Main",
+            "command": "/usr/bin/g++",
+            "args": [
+				"Dinoai.cpp",
+				"Inputlib/Inputlib.o",
+				"-I /Inputlib",
+				"-g",
+                "-o",
+                "${workspaceFolder}/Dinoai/Dinoai.out",
+                "-lX11",
+                "-lXtst"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Dinoai"
+            }
+        },
+		{
+            "type": "shell",
+            "label": "Build Inputlib",
+            "command": "/usr/bin/g++",
+            "args": [
+				"Inputlib.cpp",
+				"-c",
+				"-g",
+				"-o",
+                "${workspaceFolder}/Dinoai/Inputlib/Inputlib.o",
+                "-lX11",
+                "-lXtst"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Dinoai/Inputlib"
+            }
+        }
+	]
+}

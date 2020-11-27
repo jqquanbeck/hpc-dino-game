@@ -1,5 +1,5 @@
 ﻿// KEEP ABOVE LIBX11 HEADERS!!! DO NOT MOVE HEADER!!!
-#include <opencv2/opencv.hpp>
+//#include <opencv2/opencv.hpp>
 // KEEP ABOVE LIBX11 HEADERS!!! DO NOT MOVE HEADER!!!
 
 #include <stdio.h>
@@ -17,7 +17,7 @@
 #include <X11/keysym.h>
 
 #include "Inputlib/Inputlib.hpp"
-#include "Matchlib/Matchlib.hpp"
+//#include "Matchlib/Matchlib.hpp"
 
 using namespace std;
 
@@ -28,11 +28,27 @@ using namespace std;
 
 #define FPS 60
 
-int main() {
-    MatchMain();
+//int MatchMain();
+int InputlibMain(int, int);
+
+int main(int argc, char *argv[])
+{
+	// Process arguments
+	if (argc != 3)
+    {
+        printf("Provide the number of instances followed by the first display indentifier.\n");
+        exit(1);
+    }
+    
+    int N = atoi(argv[1]);
+    int firstDisplay = atoi(argv[2]);
+
+	InputlibMain(N, firstDisplay);
+    //MatchMain();
 }
 
-int MatchMain() {
+/*int MatchMain()
+{
 	Mat CSVImg, templateImg; //Create two Mat objects, one for the source image, one for the template
 	Point matchPt; //Point object to hold match location
 	vector<Point> matchPts;
@@ -106,63 +122,56 @@ int MatchMain() {
 	logfile.close();
 
 	return EXIT_SUCCESS;
-}
+}*/
 
-int InputlibMain() {
-    const char* DISPLAY = getenv("DISPLAY");
-    // Connect to X
-    Display* display;
-    display = XOpenDisplay(DISPLAY);
+int InputlibMain(int N, int firstDisplay)
+{
+    initWindows(N, firstDisplay);
+	printf("Initialization complete\n");
 
-    if (display == NULL) {
-        fprintf(stderr, "Cannot open display %s\n", DISPLAY);
-        exit(1);
+	// Connect to X displays
+    printf("Connecting to x displays\n");
+    Display *display[MAX_INSTANCES];
+    for (int i = 0; i < N; ++i)
+    {
+        char displayName[10];
+        sprintf(displayName, ":%d", firstDisplay + i);
+        display[i] = XOpenDisplay(displayName);
+
+        if (display[i] == NULL)
+        {
+            fprintf(stderr, "Cannot open display %s\n", displayName);
+            exit(1);
+        }
     }
 
-    // Navigate to chrome://dino
-    printf("Entering URL\n");
-    char dinopath[14] = "chrome://dino";
-    typeString(display, dinopath);
-    tapKey(display, XK_KP_Enter);
-
-    // Go fullscreen with F11
-    printf("Entering fullscreen mode (F11)\n");
-    tapKey(display, XK_F11);
-    usleep(5000000);
-
-    // Start the game and git rid of F11 popup
-    tapKey(display, XK_Up);
-
-    // Save test screenshot
-    Window window = XRootWindow(display, XDefaultScreen(display));
-    XImage* img;
-    usleep(5000000);
-    img = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
-    printf("Saving screenshot test.csv\n");
-    char csvname[14] = "logs/test.csv";
-    writeXImage2csv(img, csvname);
-
+    // main loop
     printf("Entering main loop\n");
+
     clock_t start, end;
     double executionTime;
-
     while (1)
     {
         start = clock();
 
-        tapKey(display, XK_Up);
-        img = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
+        for (int i = 0; i < N; ++i)
+        {
+            tapKey(display[i], XK_Up);
+        }
 
         // maintain 60 fps
         end = clock();
-        executionTime = ((double)(end - start)) / CLOCKS_PER_SEC;
+        executionTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-        uint sleepTime = (1.0 / FPS - executionTime) * 1000000;
+        uint sleepTime = (1.0/FPS - executionTime)*1000000;
         usleep(sleepTime);
     }
 
     // Disconnect from X
-    XCloseDisplay(display);
+    for (int i = 0; i < N; ++i)
+        XCloseDisplay(display[i]);
+
+    return 0;
 
     return 0;
 }
