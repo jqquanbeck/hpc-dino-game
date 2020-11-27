@@ -13,6 +13,14 @@
 #include <X11/extensions/XTest.h>
 #include <X11/keysym.h>
 
+#define MAX_INSTANCES 50
+
+#define WIDTH 600
+#define HEIGHT 150
+
+#define FPS 60
+
+int initWindows(int N, int firstDisplay);
 void writeXImage2csv(XImage *img, char *filename);
 void typeString(Display *display, char *str);
 void tapKey(Display *display, KeySym key);
