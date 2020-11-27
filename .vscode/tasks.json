@@ -4,7 +4,7 @@
 		{
 			"type": "shell",
 			"label": "Build Project",
-            "dependsOn": ["Build Main", "Build Inputlib"],
+            "dependsOn": ["Build Main", "Build Inputlib", "Build Matchlib"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -16,13 +16,21 @@
             "command": "/usr/bin/g++",
             "args": [
 				"Dinoai.cpp",
+
 				"Inputlib/Inputlib.o",
 				"-I /Inputlib",
+
+				"Matchlib/Matchlib.o",
+				"-I /Matchlib.o",
+
 				"-g",
                 "-o",
-                "${workspaceFolder}/Dinoai/Dinoai.out",
-                "-lX11",
-                "-lXtst"
+				"${workspaceFolder}/Dinoai/Dinoai.out",
+
+				// following three lines will be removed later
+				"-lX11",
+				"-lXtst",
+				"`pkg-config", "--cflags", "--libs", "opencv4`"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/Dinoai"
@@ -44,6 +52,22 @@
             "options": {
                 "cwd": "${workspaceFolder}/Dinoai/Inputlib"
             }
-        }
+		},
+		{
+            "type": "shell",
+            "label": "Build Matchlib",
+            "command": "/usr/bin/g++",
+            "args": [
+				"Matchlib.cpp",
+				"-c",
+				"-g",
+				"-o",
+                "${workspaceFolder}/Dinoai/Matchlib/Matchlib.o",
+                "`pkg-config", "--cflags", "--libs", "opencv4`"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Dinoai/Matchlib"
+            }
+		}
 	]
 }
