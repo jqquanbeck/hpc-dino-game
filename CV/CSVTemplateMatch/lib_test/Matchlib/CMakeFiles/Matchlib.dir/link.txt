@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMatchlib.a CMakeFiles/Matchlib.dir/Matchlib.cpp.o
+/usr/bin/ranlib libMatchlib.a
