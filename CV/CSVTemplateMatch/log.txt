@@ -1,0 +1,710 @@
+File path: ../Screenshots_Joel/
+img_0.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_1.csv: (77,89)   
+File path: ../Screenshots_Joel/
+img_2.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_3.csv: (77,53)   
+File path: ../Screenshots_Joel/
+img_4.csv: (77,51)   
+File path: ../Screenshots_Joel/
+img_5.csv: (77,56)   
+File path: ../Screenshots_Joel/
+img_6.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_7.csv: (77,81)   
+File path: ../Screenshots_Joel/
+img_8.csv: (77,101)   
+File path: ../Screenshots_Joel/
+img_9.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_10.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_11.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_12.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_13.csv: (77,65)   
+File path: ../Screenshots_Joel/
+img_14.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_15.csv: (77,76)   
+File path: ../Screenshots_Joel/
+img_16.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_17.csv: (77,115)   
+File path: ../Screenshots_Joel/
+img_18.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_19.csv: (77,114)   
+File path: ../Screenshots_Joel/
+img_20.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_21.csv: (77,58)   
+File path: ../Screenshots_Joel/
+img_22.csv: (77,49)   
+File path: ../Screenshots_Joel/
+img_23.csv: (77,49)   
+File path: ../Screenshots_Joel/
+img_24.csv: (77,56)   
+File path: ../Screenshots_Joel/
+img_25.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_26.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_27.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_28.csv: (77,80)   
+File path: ../Screenshots_Joel/
+img_29.csv: (77,53)   
+File path: ../Screenshots_Joel/
+img_30.csv: (77,45)   
+File path: ../Screenshots_Joel/
+img_31.csv: (77,43)   
+File path: ../Screenshots_Joel/
+img_32.csv: (77,51)   
+File path: ../Screenshots_Joel/
+img_33.csv: (77,62)   
+File path: ../Screenshots_Joel/
+img_34.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_35.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_36.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_37.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_38.csv: (77,55)   
+File path: ../Screenshots_Joel/
+img_39.csv: (77,42)   
+File path: ../Screenshots_Joel/
+img_40.csv: (77,42)   
+File path: ../Screenshots_Joel/
+img_41.csv: (77,49)   
+File path: ../Screenshots_Joel/
+img_42.csv: (77,60)   
+File path: ../Screenshots_Joel/
+img_43.csv: (77,84)   
+File path: ../Screenshots_Joel/
+img_44.csv: (77,108)   
+File path: ../Screenshots_Joel/
+img_45.csv: (77,106)   
+File path: ../Screenshots_Joel/
+img_46.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_47.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_48.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_49.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_50.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_51.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_52.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_53.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_54.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_55.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_56.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_57.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_58.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_59.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_60.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_61.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_62.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_63.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_64.csv: (77,80)   
+File path: ../Screenshots_Joel/
+img_65.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_66.csv: (77,118)   
+File path: ../Screenshots_Joel/
+img_67.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_68.csv: (77,87)   
+File path: ../Screenshots_Joel/
+img_69.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_70.csv: (77,65)   
+File path: ../Screenshots_Joel/
+img_71.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_72.csv: (77,69)   
+File path: ../Screenshots_Joel/
+img_73.csv: (77,84)   
+File path: ../Screenshots_Joel/
+img_74.csv: (77,101)   
+File path: ../Screenshots_Joel/
+img_75.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_76.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_77.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_78.csv: (77,71)   
+File path: ../Screenshots_Joel/
+img_79.csv: (77,58)   
+File path: ../Screenshots_Joel/
+img_80.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_81.csv: (77,53)   
+File path: ../Screenshots_Joel/
+img_82.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_83.csv: (77,85)   
+File path: ../Screenshots_Joel/
+img_84.csv: (77,108)   
+File path: ../Screenshots_Joel/
+img_85.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_86.csv: (77,71)   
+File path: ../Screenshots_Joel/
+img_87.csv: (77,58)   
+File path: ../Screenshots_Joel/
+img_88.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_89.csv: (77,53)   
+File path: ../Screenshots_Joel/
+img_90.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_91.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_92.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_93.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_94.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_95.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_96.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_97.csv: (77,84)   
+File path: ../Screenshots_Joel/
+img_98.csv: (77,108)   
+File path: ../Screenshots_Joel/
+img_99.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_100.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_101.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_102.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_103.csv: (77,77)   
+File path: ../Screenshots_Joel/
+img_104.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_105.csv: (77,110)   
+File path: ../Screenshots_Joel/
+img_106.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_107.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_108.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_109.csv: (77,65)   
+File path: ../Screenshots_Joel/
+img_110.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_111.csv: (77,117)   
+File path: ../Screenshots_Joel/
+img_112.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_113.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_114.csv: (77,77)   
+File path: ../Screenshots_Joel/
+img_115.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_116.csv: (77,63)   
+File path: ../Screenshots_Joel/
+img_117.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_118.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_119.csv: (77,93)   
+File path: ../Screenshots_Joel/
+img_120.csv: (77,122)   
+File path: ../Screenshots_Joel/
+img_121.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_122.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_123.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_124.csv: (77,69)   
+File path: ../Screenshots_Joel/
+img_125.csv: (77,90)   
+File path: ../Screenshots_Joel/
+img_126.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_127.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_128.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_129.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_130.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_131.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_132.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_133.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_134.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_135.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_136.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_137.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_138.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_139.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_140.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_141.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_142.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_143.csv: (77,58)   
+File path: ../Screenshots_Joel/
+img_144.csv: (77,50)   
+File path: ../Screenshots_Joel/
+img_145.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_146.csv: (77,59)   
+File path: ../Screenshots_Joel/
+img_147.csv: (77,84)   
+File path: ../Screenshots_Joel/
+img_148.csv: (77,116)   
+File path: ../Screenshots_Joel/
+img_149.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_150.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_151.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_152.csv: (77,65)   
+File path: ../Screenshots_Joel/
+img_153.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_154.csv: (77,76)   
+File path: ../Screenshots_Joel/
+img_155.csv: (77,90)   
+File path: ../Screenshots_Joel/
+img_156.csv: (77,110)   
+File path: ../Screenshots_Joel/
+img_157.csv: (77,110)   
+File path: ../Screenshots_Joel/
+img_158.csv: (77,77)   
+File path: ../Screenshots_Joel/
+img_159.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_160.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_161.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_162.csv: (77,87)   
+File path: ../Screenshots_Joel/
+img_163.csv: (77,112)   
+File path: ../Screenshots_Joel/
+img_164.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_165.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_166.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_167.csv: (77,57)   
+File path: ../Screenshots_Joel/
+img_168.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_169.csv: (77,44)   
+File path: ../Screenshots_Joel/
+img_170.csv: (77,49)   
+File path: ../Screenshots_Joel/
+img_171.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_172.csv: (77,81)   
+File path: ../Screenshots_Joel/
+img_173.csv: (77,104)   
+File path: ../Screenshots_Joel/
+img_174.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_175.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_176.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_177.csv: (77,51)   
+File path: ../Screenshots_Joel/
+img_178.csv: (77,44)   
+File path: ../Screenshots_Joel/
+img_179.csv: (77,42)   
+File path: ../Screenshots_Joel/
+img_180.csv: (77,47)   
+File path: ../Screenshots_Joel/
+img_181.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_182.csv: (77,93)   
+File path: ../Screenshots_Joel/
+img_183.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_184.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_185.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_186.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_187.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_188.csv: (77,69)   
+File path: ../Screenshots_Joel/
+img_189.csv: (77,84)   
+File path: ../Screenshots_Joel/
+img_190.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_191.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_192.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_193.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_194.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_195.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_196.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_197.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_198.csv: (77,94)   
+File path: ../Screenshots_Joel/
+img_199.csv: (77,116)   
+File path: ../Screenshots_Joel/
+img_200.csv: (77,115)   
+File path: ../Screenshots_Joel/
+img_201.csv: (77,87)   
+File path: ../Screenshots_Joel/
+img_202.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_203.csv: (77,52)   
+File path: ../Screenshots_Joel/
+img_204.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_205.csv: (77,56)   
+File path: ../Screenshots_Joel/
+img_206.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_207.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_208.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_209.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_210.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_211.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_212.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_213.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_214.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_215.csv: (77,94)   
+File path: ../Screenshots_Joel/
+img_216.csv: (77,116)   
+File path: ../Screenshots_Joel/
+img_217.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_218.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_219.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_220.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_221.csv: (77,69)   
+File path: ../Screenshots_Joel/
+img_222.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_223.csv: (77,101)   
+File path: ../Screenshots_Joel/
+img_224.csv: (77,123)   
+File path: ../Screenshots_Joel/
+img_225.csv: (77,106)   
+File path: ../Screenshots_Joel/
+img_226.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_227.csv: (77,71)   
+File path: ../Screenshots_Joel/
+img_228.csv: (77,65)   
+File path: ../Screenshots_Joel/
+img_229.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_230.csv: (77,76)   
+File path: ../Screenshots_Joel/
+img_231.csv: (77,90)   
+File path: ../Screenshots_Joel/
+img_232.csv: (77,109)   
+File path: ../Screenshots_Joel/
+img_233.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_234.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_235.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_236.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_237.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_238.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_239.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_240.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_241.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_242.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_243.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_244.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_245.csv: (77,124)   
+File path: ../Screenshots_Joel/
+img_246.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_247.csv: (77,106)   
+File path: ../Screenshots_Joel/
+img_248.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_249.csv: (77,52)   
+File path: ../Screenshots_Joel/
+img_250.csv: (77,44)   
+File path: ../Screenshots_Joel/
+img_251.csv: (77,42)   
+File path: ../Screenshots_Joel/
+img_252.csv: (77,50)   
+File path: ../Screenshots_Joel/
+img_253.csv: (77,62)   
+File path: ../Screenshots_Joel/
+img_254.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_255.csv: (77,111)   
+File path: ../Screenshots_Joel/
+img_256.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_257.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_258.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_259.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_260.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_261.csv: (77,83)   
+File path: ../Screenshots_Joel/
+img_262.csv: (77,103)   
+File path: ../Screenshots_Joel/
+img_263.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_264.csv: (77,79)   
+File path: ../Screenshots_Joel/
+img_265.csv: (77,55)   
+File path: ../Screenshots_Joel/
+img_266.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_267.csv: (77,53)   
+File path: ../Screenshots_Joel/
+img_268.csv: (77,78)   
+File path: ../Screenshots_Joel/
+img_269.csv: (77,106)   
+File path: ../Screenshots_Joel/
+img_270.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_271.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_272.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_273.csv: (77,63)   
+File path: ../Screenshots_Joel/
+img_274.csv: (77,71)   
+File path: ../Screenshots_Joel/
+img_275.csv: (77,94)   
+File path: ../Screenshots_Joel/
+img_276.csv: (77,122)   
+File path: ../Screenshots_Joel/
+img_277.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_278.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_279.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_280.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_281.csv: (77,80)   
+File path: ../Screenshots_Joel/
+img_282.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_283.csv: (77,116)   
+File path: ../Screenshots_Joel/
+img_284.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_285.csv: (77,87)   
+File path: ../Screenshots_Joel/
+img_286.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_287.csv: (77,59)   
+File path: ../Screenshots_Joel/
+img_288.csv: (77,57)   
+File path: ../Screenshots_Joel/
+img_289.csv: (77,63)   
+File path: ../Screenshots_Joel/
+img_290.csv: (77,77)   
+File path: ../Screenshots_Joel/
+img_291.csv: (77,102)   
+File path: ../Screenshots_Joel/
+img_292.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_293.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_294.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_295.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_296.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_297.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_298.csv: (77,88)   
+File path: ../Screenshots_Joel/
+img_299.csv: (77,123)   
+File path: ../Screenshots_Joel/
+img_300.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_301.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_302.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_303.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_304.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_305.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_306.csv: (77,97)   
+File path: ../Screenshots_Joel/
+img_307.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_308.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_309.csv: (77,105)   
+File path: ../Screenshots_Joel/
+img_310.csv: (77,64)   
+File path: ../Screenshots_Joel/
+img_311.csv: (77,48)   
+File path: ../Screenshots_Joel/
+img_312.csv: (77,41)   
+File path: ../Screenshots_Joel/
+img_313.csv: (77,44)   
+File path: ../Screenshots_Joel/
+img_314.csv: (77,57)   
+File path: ../Screenshots_Joel/
+img_315.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_316.csv: (77,101)   
+File path: ../Screenshots_Joel/
+img_317.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_318.csv: (77,96)   
+File path: ../Screenshots_Joel/
+img_319.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_320.csv: (77,68)   
+File path: ../Screenshots_Joel/
+img_321.csv: (77,66)   
+File path: ../Screenshots_Joel/
+img_322.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_323.csv: (77,90)   
+File path: ../Screenshots_Joel/
+img_324.csv: (77,109)   
+File path: ../Screenshots_Joel/
+img_325.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_326.csv: (77,95)   
+File path: ../Screenshots_Joel/
+img_327.csv: (77,82)   
+File path: ../Screenshots_Joel/
+img_328.csv: (77,74)   
+File path: ../Screenshots_Joel/
+img_329.csv: (77,72)   
+File path: ../Screenshots_Joel/
+img_330.csv: (77,75)   
+File path: ../Screenshots_Joel/
+img_331.csv: (77,83)   
+File path: ../Screenshots_Joel/
+img_332.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_333.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_334.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_335.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_336.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_337.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_338.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_339.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_340.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_341.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_342.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_343.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_344.csv: (77,92)   
+File path: ../Screenshots_Joel/
+img_345.csv: (77,126)   
+File path: ../Screenshots_Joel/
+img_346.csv: (77,107)   
+File path: ../Screenshots_Joel/
+img_347.csv: (77,73)   
+File path: ../Screenshots_Joel/
+img_348.csv: (77,56)   
+File path: ../Screenshots_Joel/
+img_349.csv: (77,43)   
+File path: ../Screenshots_Joel/
+img_350.csv: (77,43)   
+File path: ../Screenshots_Joel/
+img_351.csv: (77,50)   
+File path: ../Screenshots_Joel/
+img_352.csv: (77,67)   
+File path: ../Screenshots_Joel/
+img_353.csv: (77,86)   
+File path: ../Screenshots_Joel/
+img_354.csv: (77,126)   
