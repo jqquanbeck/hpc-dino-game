@@ -70,10 +70,19 @@ int main(int argc, char *argv[])
 
         // Go fullscreen with F11
         tapKey(display[i], XK_F11);
-        usleep(10000);
     }
 
-    getchar();
+    usleep(5000000);
+
+    for (int i = 0; i < N; ++i)
+    {
+        // Trigger start of game
+        XTestFakeMotionEvent(display[i], XDefaultScreen(display[i]), 50, 50, CurrentTime);
+        XTestFakeButtonEvent(display[i], 1, True, CurrentTime);
+        XFlush(display[i]);
+        XTestFakeButtonEvent(display[i], 1, False, CurrentTime);
+        XFlush(display[i]);
+    }
 
     // main loop
     printf("Entering main loop\n");

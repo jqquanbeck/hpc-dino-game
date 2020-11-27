@@ -22,13 +22,14 @@ echo "Starting Xnest and google chrome"
 
 echo "starting at "$firstX
 echo "ending at "$(($firstX + $N))
-read -p "Press enter to continue"
+
+#read -p "Press enter to continue"
 
 for (( i=$firstX; i<$(($firstX + $N)); i++))
 do
     export DISPLAY=$rootDisplay
     echo "Launching window "$i
-    Xnest :$i -geometry 600x150+0+$((180 * ($i - $firstX))) -bw 0 &
+    Xnest :$i -geometry 600x150+0+$((50 + 200 * ($i - $firstX))) -bw 0 &
     google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/dino/$i --no-first-run &
 done
 
