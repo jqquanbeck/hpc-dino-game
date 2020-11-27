@@ -34,4 +34,4 @@ do
 done
 
 sleep 5
-./xrun.out $N $firstX
+./xSetup.out $N $firstX

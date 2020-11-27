@@ -82,28 +82,8 @@ int main(int argc, char *argv[])
         XFlush(display[i]);
         XTestFakeButtonEvent(display[i], 1, False, CurrentTime);
         XFlush(display[i]);
-    }
-
-    // main loop
-    printf("Entering main loop\n");
-
-    clock_t start, end;
-    double executionTime;
-    while (1)
-    {
-        start = clock();
-
-        for (int i = 0; i < N; ++i)
-        {
-            tapKey(display[i], XK_Up);
-        }
-
-        // maintain 60 fps
-        end = clock();
-        executionTime = ((double) (end - start)) / CLOCKS_PER_SEC;
-
-        uint sleepTime = (1.0/FPS - executionTime)*1000000;
-        usleep(sleepTime);
+        tapKey(display[i], XK_Up);
+        XFlush(display[i]);
     }
 
     // Disconnect from X
@@ -111,23 +91,6 @@ int main(int argc, char *argv[])
         XCloseDisplay(display[i]);
 
     return 0;
-}
-
-void writeXImage2csv(XImage *img, char *filename)
-{
-    FILE *fh = fopen(filename,"w+");
-
-    for(int y = 0; y < img->height; y++)
-    {
-        for(int x = 0; x < img->width - 1; x++)
-        {
-            fprintf(fh, "%d,", (uint8_t)(XGetPixel(img, x, y) & img->blue_mask));
-        }
-
-        fprintf(fh, "%d\n", (uint8_t)(XGetPixel(img, img->width - 1, y) & img->blue_mask));
-    }
-
-    fclose(fh);
 }
 
 void typeString(Display *display, char *str)
