@@ -1,5 +1,5 @@
 ﻿# CMakeList.txt : CMake project for Dinoai, include source and define
-cmake_minimum_required(VERSION "3.17" FATAL_ERROR)
+cmake_minimum_required(VERSION "3.16" FATAL_ERROR)
 
 # Add source to this project's executable.
 add_executable ( Dinoai "Dinoai.cpp" )

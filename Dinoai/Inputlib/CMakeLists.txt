@@ -1,5 +1,5 @@
 # Overview
-cmake_minimum_required(VERSION "3.17" FATAL_ERROR)
+cmake_minimum_required(VERSION "3.16" FATAL_ERROR)
 add_library( Inputlib
     STATIC "${CMAKE_CURRENT_SOURCE_DIR}/Inputlib.cpp" 
 )
@@ -7,7 +7,7 @@ add_library( Inputlib
 # Scan for libX11
 include( "FindX11" )
 
-# === CONFIGURE TARGET MATCHLIB =======================================================
+# === CONFIGURE TARGET INPUTLIB =======================================================
 target_include_directories( Inputlib
     PUBLIC "${X11_INCLUDE_DIR}"
 )  

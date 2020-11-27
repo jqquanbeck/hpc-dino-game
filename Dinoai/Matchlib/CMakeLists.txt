@@ -1,5 +1,5 @@
 # CMakeList.txt : CMake project for Matchlib, include source and define
-cmake_minimum_required(VERSION "3.17" FATAL_ERROR)
+cmake_minimum_required(VERSION "3.16" FATAL_ERROR)
 add_library( Matchlib
     STATIC "${CMAKE_CURRENT_SOURCE_DIR}/Matchlib.cpp" 
 )
