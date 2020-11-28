@@ -12,65 +12,44 @@
 
 #include "Inputlib.hpp"
 
-int initWindows(int N, int firstDisplay)
+int initWindow(Display *display)
 {
-    // Connect to X display
-    printf("Connecting to x displays\n");
-    Display *display[MAX_INSTANCES];
-    for (int i = 0; i < N; ++i)
-    {
-        char displayName[10];
-        sprintf(displayName, ":%d", firstDisplay + i);
-        display[i] = XOpenDisplay(displayName);
-
-        if (display[i] == NULL)
-        {
-            fprintf(stderr, "Cannot open display %s\n", displayName);
-            return 1;
-        }
-    }
-
     printf("Navigating to chrome://dino\n");
-    for (int i = 0; i < N; ++i)
-    {
-        Window window = XDefaultRootWindow(display[i]);
+    Window window = XDefaultRootWindow(display);
 
-        Window root, parent;
-        Window *children;
-        unsigned int nChildren;
+    Window root, parent;
+    Window *children;
+    unsigned int nChildren;
 
-        XQueryTree(display[i], window, &root, &parent, &children, &nChildren);
+    XQueryTree(display, window, &root, &parent, &children, &nChildren);
 
-        XMoveResizeWindow(display[i], children[3], 0, 0, 600, 150);
+    XMoveResizeWindow(display, children[3], 0, 0, 600, 150);
 
-        // Navigate to chrome://dino
-        typeString(display[i], (char*)("chrome://dino"));
-        tapKey(display[i], XK_KP_Enter);
+    // Navigate to chrome://dino
+    typeString(display, (char*)("chrome://dino"));
+    tapKey(display, XK_KP_Enter);
 
-        // Go fullscreen with F11
-        tapKey(display[i], XK_F11);
-    }
+    // Go fullscreen with F11
+    printf("Entering fullscreen mode\n");
+    tapKey(display, XK_F11);
 
-    usleep(5000000);
+    usleep(1000000);
 
     // Trigger start of game
-    for (int i = 0; i < N; ++i)
-    {
-        // Click mouse
-        XTestFakeMotionEvent(display[i], XDefaultScreen(display[i]), 50, 50, CurrentTime);
-        XTestFakeButtonEvent(display[i], 1, True, CurrentTime);
-        XFlush(display[i]);
-        XTestFakeButtonEvent(display[i], 1, False, CurrentTime);
-        XFlush(display[i]);
+    // Click mouse
+    printf("Starting game\n");
+    XTestFakeMotionEvent(display, XDefaultScreen(display), 50, 50, CurrentTime);
+    XTestFakeButtonEvent(display, 1, True, CurrentTime);
+    XFlush(display);
+    XTestFakeButtonEvent(display, 1, False, CurrentTime);
+    XFlush(display);
 
-        // Hit up arrow key
-        tapKey(display[i], XK_Up);
-        XFlush(display[i]);
-    }
-
-    // Disconnect from X
-    for (int i = 0; i < N; ++i)
-        XCloseDisplay(display[i]);
+    // Hit up arrow key
+    printf("Hitting up arrow\n");
+    tapKey(display, XK_Up);
+    printf("Flushing display?\n");
+    XFlush(display);
+    printf("Failing to return...\n");
 
     return 0;
 }
@@ -109,6 +88,24 @@ void tapKey(Display *display, KeySym key)
     XTestFakeKeyEvent(display, sym, 1, 0); // press
     XFlush(display);
     usleep(10000);
+    XTestFakeKeyEvent(display, sym, 0, 0); // release
+    XFlush(display);
+}
+
+void pressKey(Display *display, KeySym key)
+{
+    KeyCode sym = XKeysymToKeycode(display, key);
+
+    // Simulate the keypress
+    XTestFakeKeyEvent(display, sym, 1, 0); // press
+    XFlush(display);
+}
+
+void releaseKey(Display *display, KeySym key)
+{
+    KeyCode sym = XKeysymToKeycode(display, key);
+
+    // Simulate the keypress
     XTestFakeKeyEvent(display, sym, 0, 0); // release
     XFlush(display);
 }

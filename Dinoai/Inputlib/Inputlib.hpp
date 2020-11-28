@@ -20,9 +20,14 @@
 
 #define FPS 60
 
-int initWindows(int N, int firstDisplay);
+// externally called
+int initWindow(Display *display);
+
+// internally called
 void writeXImage2csv(XImage *img, char *filename);
 void typeString(Display *display, char *str);
 void tapKey(Display *display, KeySym key);
+void pressKey(Display *display, KeySym key);
+void releaseKey(Display *display, KeySym key);
 
 #endif

@@ -1,27 +1,15 @@
-﻿// KEEP ABOVE LIBX11 HEADERS!!! DO NOT MOVE HEADER!!!
-//#include <opencv2/opencv.hpp>
-// KEEP ABOVE LIBX11 HEADERS!!! DO NOT MOVE HEADER!!!
-
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <stdint.h>
 #include <unistd.h>
-
+#include <vector>
 #include <string>
 
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
-#include <X11/extensions/XTest.h>
-#include <X11/keysym.h>
-
-#include "Inputlib/Inputlib.hpp"
-//#include "Matchlib/Matchlib.hpp"
+#include "Envlib.hpp"
 
 using namespace std;
-
-// #define DISPLAY ":0"
 
 #define WIDTH 600
 #define HEIGHT 150
@@ -42,6 +30,9 @@ int main(int argc, char *argv[])
     
     int N = atoi(argv[1]);
     int firstDisplay = atoi(argv[2]);
+
+	printf("\n\n==================== Starting DinoAI ====================\n");
+	printf("Batch size = %d\n\n", N);
 
 	InputlibMain(N, firstDisplay);
     //MatchMain();
@@ -126,24 +117,16 @@ int main(int argc, char *argv[])
 
 int InputlibMain(int N, int firstDisplay)
 {
-    initWindows(N, firstDisplay);
-	printf("Initialization complete\n");
+	std::vector<Envlib> environments;
 
-	// Connect to X displays
-    printf("Connecting to x displays\n");
-    Display *display[MAX_INSTANCES];
+	environments.reserve(N);
+
     for (int i = 0; i < N; ++i)
-    {
-        char displayName[10];
-        sprintf(displayName, ":%d", firstDisplay + i);
-        display[i] = XOpenDisplay(displayName);
-
-        if (display[i] == NULL)
-        {
-            fprintf(stderr, "Cannot open display %s\n", displayName);
-            exit(1);
-        }
-    }
+	{
+		environments.emplace_back(firstDisplay + i);
+	}
+	
+	printf("\nInitialization complete\n");
 
     // main loop
     printf("Entering main loop\n");
@@ -156,7 +139,9 @@ int InputlibMain(int N, int firstDisplay)
 
         for (int i = 0; i < N; ++i)
         {
-            tapKey(display[i], XK_Up);
+            environments[i].setAction(Envlib::UP);
+			usleep(1000);
+			environments[i].setAction(Envlib::NONE);
         }
 
         // maintain 60 fps
@@ -166,12 +151,6 @@ int InputlibMain(int N, int firstDisplay)
         uint sleepTime = (1.0/FPS - executionTime)*1000000;
         usleep(sleepTime);
     }
-
-    // Disconnect from X
-    for (int i = 0; i < N; ++i)
-        XCloseDisplay(display[i]);
-
-    return 0;
 
     return 0;
 }
