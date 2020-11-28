@@ -106,10 +106,20 @@ int main1()
 
 int main2() {
 	Mat testImg = Mat(150, 600, CV_8UC1);
-	string filePath = "../Screenshots_Joel/img_95.csv"; //path string
+	//string filePath = "../Screenshots_Joel/img_95.csv"; //path string
+	string filePath = "../Screenshots_Joel/img_107.csv"; //path string
 	testImg = CSVtoMat(150, 600, filePath);
+	int test = 0;
 
-	int test = getScore(testImg);
+	for (int k = 0; k < 355; k++) {
+		string filePath = "../Screenshots_Joel/"; //path string
+		string fileName = "img_" + to_string(k) + ".csv"; //create filename string
+		string fullFileName = filePath+fileName;
+		testImg = CSVtoMat(150, 600, fullFileName);
+		
+		test = getScore(testImg);
+		cout << "Image " << k << ":" << test << endl;
+	}
 	
 	return EXIT_SUCCESS;
 }
