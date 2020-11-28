@@ -9,6 +9,7 @@ Envlib::Envlib(int dispId)
      char displayName[10];
     sprintf(displayName, ":%d", dispId);
     _display = XOpenDisplay(displayName);
+    _window = XDefaultRootWindow(_display);
 
     if (_display == NULL)
     {
@@ -16,9 +17,7 @@ Envlib::Envlib(int dispId)
         exit(1);
     }
 
-    initWindow(_display);
-    printf("Returned from initWindow\n");
-    return;
+    initWindow(_display, _window);
 }
 
 Envlib::Envlib(const Envlib &old)
@@ -34,6 +33,8 @@ Envlib::~Envlib()
 
 int Envlib::getScore(uint32_t &score)
 {
+    getScreenshot(_display, _window, _img);
+
     score = 10; // temp arbitrary value
 
     return 0; // success
@@ -68,4 +69,9 @@ int Envlib::setAction(Envlib::Action action)
     }
 
     return 0; // success
+}
+
+int Envlib::saveScreenshot(char *filename)
+{
+    return writeImage2csv(_img, WIDTH, HEIGHT, filename);
 }

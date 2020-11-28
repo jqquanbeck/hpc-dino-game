@@ -45,6 +45,8 @@
 
                 "-I",
                 "${workspaceFolder}/Dinoai/Envlib",
+                "-I",
+                "${workspaceFolder}/Dinoai/Inputlib",
 
                 "-c",
                 "-g",

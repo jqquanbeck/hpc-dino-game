@@ -382,3 +382,6 @@ FodyWeavers.xsd
 # Object files
 *.o
 *.out
+
+# Logs
+logs/*

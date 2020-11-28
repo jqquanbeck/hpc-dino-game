@@ -9,12 +9,9 @@
 
 #include "Envlib.hpp"
 
+#define FPS 30
+
 using namespace std;
-
-#define WIDTH 600
-#define HEIGHT 150
-
-#define FPS 60
 
 //int MatchMain();
 int InputlibMain(int, int);
@@ -131,6 +128,9 @@ int InputlibMain(int N, int firstDisplay)
     // main loop
     printf("Entering main loop\n");
 
+	char filename[20];
+	int fn = 0;
+
     clock_t start, end;
     double executionTime;
     while (1)
@@ -139,17 +139,28 @@ int InputlibMain(int N, int firstDisplay)
 
         for (int i = 0; i < N; ++i)
         {
+			uint32_t score;
+
+			environments[i].getScore(score);
+
             environments[i].setAction(Envlib::UP);
 			usleep(1000);
 			environments[i].setAction(Envlib::NONE);
+
+			sprintf(filename, "../logs/img_%d_%d.csv", i, fn++);
+			environments[i].saveScreenshot(filename);
         }
 
-        // maintain 60 fps
+        // maintain desired loop rate
         end = clock();
         executionTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-        uint sleepTime = (1.0/FPS - executionTime)*1000000;
-        usleep(sleepTime);
+        int sleepTime = (1.0/FPS - executionTime)*1000000;
+        if (sleepTime > 0)
+			usleep(sleepTime);
+		else
+			printf("WARNING: droping below desired loop rate\n");
+			
     }
 
     return 0;

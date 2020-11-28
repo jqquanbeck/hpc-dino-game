@@ -12,10 +12,10 @@
 
 #include "Inputlib.hpp"
 
-int initWindow(Display *display)
+int initWindow(Display *display, Window window)
 {
     printf("Navigating to chrome://dino\n");
-    Window window = XDefaultRootWindow(display);
+    //Window window = XDefaultRootWindow(display);
 
     Window root, parent;
     Window *children;
@@ -45,30 +45,54 @@ int initWindow(Display *display)
     XFlush(display);
 
     // Hit up arrow key
-    printf("Hitting up arrow\n");
     tapKey(display, XK_Up);
-    printf("Flushing display?\n");
     XFlush(display);
-    printf("Failing to return...\n");
 
     return 0;
 }
 
-void writeXImage2csv(XImage *img, char *filename)
+int getScreenshot(Display *display, Window window, uint8_t img[HEIGHT][WIDTH])
+{
+    XImage *xImg;
+    xImg = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
+
+    Image2ByteArray(xImg, img);
+
+    return 0;
+}
+
+int Image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH])
+{
+    for(int y = 0; y < xImg->height; y++)
+        for(int x = 0; x < xImg->width; x++)
+            img[y][x] = (uint8_t)(XGetPixel(xImg, x, y) & xImg->blue_mask);
+
+    return 0; // success
+}
+
+int writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsigned int h, char *filename)
 {
     FILE *fh = fopen(filename,"w+");
 
-    for(int y = 0; y < img->height; y++)
+    if (fh == NULL)
     {
-        for(int x = 0; x < img->width - 1; x++)
+        printf("Failed to open file %s\n", filename);
+        return 1;
+    }
+
+    for(int y = 0; y < h; y++)
+    {
+        for(int x = 0; x < w - 1; x++)
         {
-            fprintf(fh, "%d,", (uint8_t)(XGetPixel(img, x, y) & img->blue_mask));
+            fprintf(fh, "%d,", img[y][x]);
         }
 
-        fprintf(fh, "%d\n", (uint8_t)(XGetPixel(img, img->width - 1, y) & img->blue_mask));
+        fprintf(fh, "%d\n", img[y][w-1]);
     }
 
     fclose(fh);
+
+    return 0; // success
 }
 
 void typeString(Display *display, char *str)
@@ -108,4 +132,21 @@ void releaseKey(Display *display, KeySym key)
     // Simulate the keypress
     XTestFakeKeyEvent(display, sym, 0, 0); // release
     XFlush(display);
+}
+
+void writeXImage2csv(XImage *img, char *filename)
+{
+    FILE *fh = fopen(filename,"w+");
+
+    for(int y = 0; y < img->height; y++)
+    {
+        for(int x = 0; x < img->width - 1; x++)
+        {
+            fprintf(fh, "%d,", (uint8_t)(XGetPixel(img, x, y) & img->blue_mask));
+        }
+
+        fprintf(fh, "%d\n", (uint8_t)(XGetPixel(img, img->width - 1, y) & img->blue_mask));
+    }
+
+    fclose(fh);
 }
