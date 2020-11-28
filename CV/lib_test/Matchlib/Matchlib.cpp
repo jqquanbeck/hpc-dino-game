@@ -68,14 +68,60 @@ bool isNight(Mat Img)
 }
 
 int getScore(Mat Img) { //Takes an unaltered image (e.g. not cropped) and determines the score
-	int score = 0;
-	int coords[][2] = {{547,20}, {536,20}, {525,20}, {514,20}, {503,20} };
+	//some things to implement: automatically switching between night and day (easy fix)
+	//this will load the num_X.png images every time this function is called, which is super inefficient
+		//Find some way to save that loading
+		//probably just open the numbers once in main and pass them into the function each time?
 	
-	for (int digit = 0; digit <= 4; digit++) {
+	int score = 0;
+	int coords[][2] = {{547,20}, {536,20}, {525,20}, {514,20}, {503,20} }; //locations of the TOP LEFT corner of each score digit
+	Mat numImg[10]; //array of mats to hold the template numbers
+	Mat scoreImg[5] = Mat(11, 9, CV_8UC1); //array of mats to hold the captured scores from the screenshot
+	
+	string numImgLoc = "../../dinosprite/fullsize/regular/num_";
+	
+	//read number images into array of Mats;
+	for(int i = 0; i <= 9; i++) {
+		string numImgFullPath = numImgLoc + to_string(i) + ".png";
+		numImg[i] = imread(numImgFullPath, IMREAD_GRAYSCALE);
+	}
+	
+	//prepare image for template matching
+	cout << "size of digit: " << sizeof(scoreImg) << endl;
+	for(int digit = 0; digit < sizeof(scoreImg)/sizeof(scoreImg[0]); digit++) { //for each digit
+		scoreImg[digit] = Img( Rect( coords[digit][0], coords[digit][1], 9, 11) ); //crop the image
+		imwrite("output/scoreImg(" + to_string(digit) + ").png" , scoreImg[digit]); //write each score image to PNG for debug
+	}
+	
+	
+	/*
+	for (int digit = 0; digit <= 4; digit++) { //for each coord
 		for(int num = 0; num <= 9; num++) { //do for i from 0 to 9
-		
-			if (
+			
 		}
 	}
+	*/
 	return score;
 }
+
+Mat CSVtoMat(int rows, int cols, string filepath) { 
+	//this function sucks because it doesn't automatically determine size of CSV
+	//find some way to make the mat automatically the size of the CSV without much overhead.
+	
+	Mat CSVImg;
+	CSVImg = Mat(rows, cols, CV_8UC1); //Create rows x cols pixel Mat made of uint8s
+	ifstream myfile(filepath); //open csv file
+	
+	string CSVstr; //temp to hold a line from the csv file
+	
+	if(myfile) { //if file is valid
+		for (int i=0; i<CSVImg.rows-1; i++) { //for each row
+			for (int j=0; j<CSVImg.cols-1; j++) { //for each column
+				getline(myfile, CSVstr, ','); //get a line from the CSV up to the next comma
+				CSVImg.at<uchar>(i,j) = stoi(CSVstr); //save the data from the CSV into an int
+			}
+		}
+	}
+	
+	return CSVImg;
+}		

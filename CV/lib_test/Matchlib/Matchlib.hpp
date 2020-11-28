@@ -19,4 +19,8 @@ std::vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance);
 
 bool isNight(Mat Img);
 
+int getScore(Mat Img);
+
+Mat CSVtoMat(int rows, int cols, std::string filepath);
+
 #endif

@@ -13,15 +13,17 @@ using namespace std;
 using namespace cv;
 
 int main1();
+int main2();
 
 int main() {
-	main1();
+	//main1();
+	main2();
 	return 0;
 }
 
 int main1()
 {
-		Mat CSVImg, templateImg; //Create two Mat objects, one for the source image, one for the template
+	Mat CSVImg, templateImg; //Create two Mat objects, one for the source image, one for the template
 	Point matchPt; //Point object to hold match location
 	vector<Point> matchPts;
 	CSVImg = Mat(150, 600, CV_8UC1); //Create 150x600px mat made of uint8
@@ -98,6 +100,16 @@ int main1()
 	}
 	
 	logfile.close();
+	
+	return EXIT_SUCCESS;
+}
+
+int main2() {
+	Mat testImg = Mat(150, 600, CV_8UC1);
+	string filePath = "../Screenshots_Joel/img_95.csv"; //path string
+	testImg = CSVtoMat(150, 600, filePath);
+
+	int test = getScore(testImg);
 	
 	return EXIT_SUCCESS;
 }
