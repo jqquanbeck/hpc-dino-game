@@ -17,7 +17,8 @@ int main2();
 
 int main() {
 	//main1();
-	main2();
+	//main2();
+	main3();
 	return 0;
 }
 
@@ -117,9 +118,17 @@ int main2() {
 		string fullFileName = filePath+fileName;
 		testImg = CSVtoMat(150, 600, fullFileName);
 		
-		test = getScore(testImg);
+		test = getScore(testImg, false);
 		cout << "Image " << k << ":" << test << endl;
 	}
+	
+	return EXIT_SUCCESS;
+}
+
+int main3() {
+	
+	char 
+	CSVtoArr(150, 600);
 	
 	return EXIT_SUCCESS;
 }
