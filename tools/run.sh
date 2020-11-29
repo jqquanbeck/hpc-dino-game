@@ -14,8 +14,8 @@ echo "Removing temporary files"
 rm -rf /tmp/dino/*
 
 # determine highest X display number in use
-highestX=$(ls /tmp/.X11-unix | tail -1 | cut -c2-)
-firstX=$(($highestX + 1));
+highestX=$(ls /tmp/.X11-unix | cut -c2- | sort -n | tail -1)
+firstX=$(($highestX + 100));
 
 echo "Starting with Xnest :"$firstX
 
