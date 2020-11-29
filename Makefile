@@ -9,9 +9,9 @@ STATIC_LIB = ar rcs
 SHARED_LIB = $(CC) -shared -o
 
 # OpenCV build options and linker targets/locations
-OPENCV_LINKER_OPTIONS = -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_stitching
+OPENCV_LINKER_OPTIONS = -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_stitching
 OPENCV_LIBRARY_LOCATIONS = -L/usr/local/lib/
-OPENCV_INCLUDE_LOCATIONS = -I/usr/local/include/opencv -I/usr/local/include/opencv2
+OPENCV_INCLUDE_LOCATIONS = `pkg-config --cflags --libs opencv4`
 
 # X11 build options and linker targets/locations
 X11_LINKER_OPTIONS = -lX11 -lstdc++ -lXtst
