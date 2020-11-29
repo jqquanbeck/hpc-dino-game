@@ -85,9 +85,9 @@ int inputlib::writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, c
         return 1;
     }
 
-    for(int y = 0; y < h; y++)
+    for(unsigned int y = 0; y < h; y++)
     {
-        for(int x = 0; x < w - 1; x++)
+        for(unsigned int x = 0; x < w - 1; x++)
         {
             fprintf(fh, "%d,", img[y][x]);
         }
@@ -101,7 +101,6 @@ int inputlib::writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, c
 }
 
 void inputlib::typeString(Display *display, char *str){
-    KeySym sym;
     for (int i = 0; str[i] != '\0'; ++i)
     {
         tapKey(display, str[i]);
