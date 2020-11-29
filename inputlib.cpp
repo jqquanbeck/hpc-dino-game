@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,10 +12,16 @@
 #include <X11/extensions/XTest.h>
 #include <X11/keysym.h>
 
-#include "Inputlib.hpp"
+#include "inputlib.h"
 
-int initWindow(Display *display, Window window)
-{
+#define MAX_INSTANCES 50
+
+#define WIDTH 600
+#define HEIGHT 150
+
+using namespace std;
+
+int inputlib::initWindow(Display *display, Window window){
     printf("Navigating to chrome://dino\n");
     //Window window = XDefaultRootWindow(display);
 
@@ -51,18 +59,16 @@ int initWindow(Display *display, Window window)
     return 0;
 }
 
-int getScreenshot(Display *display, Window window, uint8_t img[HEIGHT][WIDTH])
-{
+int inputlib::getScreenshot(Display *display, Window window, uint8_t img[HEIGHT][WIDTH]){
     XImage *xImg;
     xImg = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
 
-    Image2ByteArray(xImg, img);
+    image2ByteArray(xImg, img);
 
     return 0;
 }
 
-int Image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH])
-{
+int inputlib::image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH]){
     for(int y = 0; y < xImg->height; y++)
         for(int x = 0; x < xImg->width; x++)
             img[y][x] = (uint8_t)(XGetPixel(xImg, x, y) & xImg->blue_mask);
@@ -70,8 +76,7 @@ int Image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH])
     return 0; // success
 }
 
-int writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsigned int h, char *filename)
-{
+int inputlib::writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsigned int h, char *filename){
     FILE *fh = fopen(filename,"w+");
 
     if (fh == NULL)
@@ -95,8 +100,7 @@ int writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsig
     return 0; // success
 }
 
-void typeString(Display *display, char *str)
-{
+void inputlib::typeString(Display *display, char *str){
     KeySym sym;
     for (int i = 0; str[i] != '\0'; ++i)
     {
@@ -104,8 +108,7 @@ void typeString(Display *display, char *str)
     }
 }
 
-void tapKey(Display *display, KeySym key)
-{
+void inputlib::tapKey(Display *display, KeySym key){
     KeyCode sym = XKeysymToKeycode(display, key);
 
     // Simulate the keypress
@@ -116,8 +119,7 @@ void tapKey(Display *display, KeySym key)
     XFlush(display);
 }
 
-void pressKey(Display *display, KeySym key)
-{
+void inputlib::pressKey(Display *display, KeySym key){
     KeyCode sym = XKeysymToKeycode(display, key);
 
     // Simulate the keypress
@@ -125,8 +127,7 @@ void pressKey(Display *display, KeySym key)
     XFlush(display);
 }
 
-void releaseKey(Display *display, KeySym key)
-{
+void inputlib::releaseKey(Display *display, KeySym key){
     KeyCode sym = XKeysymToKeycode(display, key);
 
     // Simulate the keypress
@@ -134,8 +135,7 @@ void releaseKey(Display *display, KeySym key)
     XFlush(display);
 }
 
-void writeXImage2csv(XImage *img, char *filename)
-{
+void inputlib::writeXImage2csv(XImage *img, char *filename){
     FILE *fh = fopen(filename,"w+");
 
     for(int y = 0; y < img->height; y++)
@@ -149,4 +149,8 @@ void writeXImage2csv(XImage *img, char *filename)
     }
 
     fclose(fh);
+}
+
+void inputlib::inputlib(){
+    cout << "Hello from inputlib" << endl;
 }
