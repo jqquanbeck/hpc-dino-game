@@ -2,7 +2,7 @@
 
 # Define build tools
 CC = g++
-CFLAGS = -Wall -fPIC
+CFLAGS = -std=c++11 -Wall -fPIC
 LINKER = $(CC) -o
 COMPILER = $(CC) $(CFLAGS) -c
 STATIC_LIB = ar rcs
@@ -26,13 +26,13 @@ AGG_INCLUDE_LOCATIONS = $(X11_INCLUDE_LOCATIONS) $(OPENCV_INCLUDE_LOCATIONS)
 
 # Link object files together and produce main executable
 # dinoai: dinoai.o matchlib.o inputlib.o
-# 	$(LINKER) dinoai $(AGG_INCLUDE_LOCATIONS) $(AGG_LIBRARY_LOCATIONS)  dinoai.o matchlib.o inputlib.o $(AGG_LINKER_OPTIONS)
+#   $(LINKER) dinoai $(AGG_INCLUDE_LOCATIONS) $(AGG_LIBRARY_LOCATIONS)  dinoai.o matchlib.o inputlib.o $(AGG_LINKER_OPTIONS)
 
 # # Compile objects
 # dinoai.o: dinoai.cpp
 # 	$(COMPILER) dinoai.cpp
 
-dinolib.so: matchlib.o inputlib.o envlib.o
+dinolib.so: matchlib.o inputlib.o envlib.o pyhandler.o
 	$(SHARED_LIB) dinolib.so $(AGG_INCLUDE_LOCATIONS) $(AGG_LIBRARY_LOCATIONS) matchlib.o inputlib.o envlib.o $(AGG_LINKER_OPTIONS)
 matchlib.o: matchlib.cpp
 	$(COMPILER) $(OPENCV_INCLUDE_LOCATIONS) $(OPENCV_LIBRARY_LOCATIONS) matchlib.cpp $(OPENCV_LINKER_OPTIONS)
@@ -40,6 +40,8 @@ inputlib.o: inputlib.cpp
 	$(COMPILER) $(X11_INCLUDE_LOCATIONS) $(X11_LIBRARY_LOCATIONS) inputlib.cpp $(X11_LINKER_OPTIONS)
 envlib.o: envlib.cpp
 	$(COMPILER) $(X11_INCLUDE_LOCATIONS) $(X11_LIBRARY_LOCATIONS) envlib.cpp $(X11_LINKER_OPTIONS)
+pyhandler.o: pyhandler.cpp
+	$(COMPILER) pyhandler.cpp
 
 # Remove residuals
 clean:
