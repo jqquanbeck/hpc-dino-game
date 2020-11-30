@@ -45,4 +45,4 @@ pyhandler.o: pyhandler.cpp envlib.o
 
 # Remove residuals
 clean:
-	rm -f *.o *.a *.so dinoai
+	rm -f *.o *.a *.so *.pyc dinoai
