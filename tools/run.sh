@@ -11,7 +11,7 @@ echo "Killing all Xnest instances"
 killall Xnest -s SIGKILL
 
 echo "Removing temporary files"
-rm -rf /tmp/dino/*
+rm -rf /tmp/$USER/dino/*
 rm -rf /tmp/.X11-unix/*
 rm log.txt
 
