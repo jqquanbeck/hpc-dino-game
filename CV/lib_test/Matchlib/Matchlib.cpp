@@ -191,33 +191,71 @@ unsigned char ** CSVtoArr(int rows, int cols, string filepath) {
 	*/
 }	
 
-enemy_t getEnemy(Mat Img, float tolerance, bool isNight) {
-	Mat result;
+enemy_t * getEnemy(Mat Img, float tolerance, bool isNight) {
+	//This function only returns a total of 6 enemies. It's VERY unlikely (honestly almost impossible) that the game will produces more than that
+	//However, if that were the case, which it won't be, the matches are returned in prioritiy based on the order of the fileName string 
+	//(e.g. cacti_single_large has higher priority than bird_2)
+	//The amount of returned matches had to be constrained because the NN has to have a known input size
+	
+	const int maxEnemies = 6;
+	//enemy_t * enemyStruct = (enemy_t*) malloc( maxEnemies * sizeof(enemy_t*) ); //initialize 
+	enemy_t * enemyStruct = (enemy_t*) malloc( (maxEnemies+1) * sizeof(enemy_t) ); //initialize. The +1 fixes a memory issue i guess
 
+	Mat result;
+	
+	//these should probably be stored in a struct but too bad
 	string filePath = "../../dinosprite/smaller/regular/";
-	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};\
-	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; //only the cacti_single_large is correct. fill out the rest
-	vector<Point> EnemyLoc[8];
+	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};
+	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; 
+	
+	//only the cacti_single_large is a real number. 
+	//The rest should probably be filled out based on testing on screencaps where a given sprite is known to exist
+	
+	vector<Point> EnemyLoc[8]; //8 vectors of points for 8 sprites. should be defined based on size of file name lol
 	
 	for( int i = 0; i < sizeof(fileName)/sizeof(fileName[0]); i++) { //iterate through each sprite
-		Mat enemyTemplate = imread(filePath+fileName[i], IMREAD_GRAYSCALE);
-		int result_rows = Img.rows - enemyTemplate.rows + 1; //calculate result image rows
-		int result_cols = Img.cols - enemyTemplate.cols + 1; //calculate result image cols
-		EnemyLoc[i] = TemplateMatch(Img, enemyTemplate, 0.0119287, 0.05);
+		Mat enemyTemplate = imread(filePath+fileName[i], IMREAD_GRAYSCALE); //read the sprite
+		EnemyLoc[i] = TemplateMatch(Img, enemyTemplate, thresholds[i], tolerance); //match the sprite with the provided image
 		
-		if(EnemyLoc[i].size() != 0)
-			cout << "Match(es) found!! File: " << fileName[i] << ", Number of matches = " << EnemyLoc[i].size() << ". Locations: ";
+		/*
+		if(EnemyLoc[i].size() != 0) //if there is an item returned for that sprite
+			cout << "Match(es) found!! File: " << fileName[i] << ", Number of matches = " << EnemyLoc[i].size() << ". Locations: "; //print
 		for(int j = 0; j < EnemyLoc[i].size(); j ++) {
 			cout << "(" << EnemyLoc[i].at(j).x << "," << EnemyLoc[i].at(j).y << ")  ";
 		}
 		if(EnemyLoc[i].size() != 0)
 			cout << endl;
+		*/
 	}
 	
+	int enemyNumber = 0; //this stores how many enemies have been matched
+	
+	//probably not the best way to do this?
+	for(int i = 0; i <  sizeof(fileName)/sizeof(fileName[0]); i++) { //for each sprite
+		for(int j = 0; j < EnemyLoc[i].size(); j ++) { //for each match of that sprite (could be 0)
+			if(enemyNumber < maxEnemies) {
+				enemyStruct[enemyNumber].x = (int)(EnemyLoc[i].at(j).x);
+				enemyStruct[enemyNumber].y = (int)EnemyLoc[i].at(j).y;
+				enemyStruct[enemyNumber].ID = i;
+				enemyNumber++;
+				cout << "enemynumber: " << enemyNumber << endl;
+			}
+			else
+				cout << "Too many items on screen!!";
+		}
+	}
+	
+	if(enemyNumber < maxEnemies) { //if you didn't use up all the available enemy slots
+		for(int k = maxEnemies; k >= enemyNumber; k--) { //fill the rest with junk info
+			enemyStruct[k].x = 999;
+			enemyStruct[k].y = 999;
+			enemyStruct[k].ID = 999;
+		}
+	}
+	
+	for( int i = 0; i < 8; i++) {
+		vector<Point>().swap(EnemyLoc[i]);
+	}
 
-		
-
-		
-	enemy_t asdf = {69, 420, 99}; //return so it doesn't break
-	return asdf;
+	return enemyStruct;
 } 

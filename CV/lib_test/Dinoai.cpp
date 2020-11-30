@@ -25,9 +25,58 @@ int main() {
 }
 
 int main4() {
-	Mat testImg = CSVtoMat(150, 600, "../Screenshots_Joel/img_108_d.csv");
-	enemy_t bird = getEnemy(testImg, 0.99, 0);
-	//cout << bird.x << " " << bird.y << " " << bird.ID << endl;
+	//Mat testImg = CSVtoMat(150, 600, "../Screenshots_Joel/img_108.csv");
+	cout << "test" << endl;
+	//enemy_t * enemyArr = (enemy_t*)malloc(6*sizeof(enemy_t*));
+	enemy_t * enemyArr = (enemy_t*)malloc((6+1)*sizeof(enemy_t)); //the +1 fixes a memory issue i guess
+	cout << "test" << endl;
+	string filePath = "../Screenshots_Joel/"; //path string
+	
+	for(int k = 0; k < 355; k++) {
+		cout << k << endl;
+		string fileName = "img_" + to_string(k) + ".csv"; //create filename string
+		string fullFileName = filePath+fileName;
+		
+		Mat testImg = CSVtoMat(150, 600, fullFileName);
+		//cout << "test" << endl;
+		enemyArr = getEnemy(testImg, 0.05, 0);
+		for(int i = 0; i < 6; i++) {
+			if(enemyArr[i].ID != 999) {
+				cout << "Enemy found in image" << k << "! Located at: (" << enemyArr[i].x << "," << enemyArr[i].y << ") ID: " << enemyArr[i].ID << endl;
+			}
+		}
+		
+		
+	}
+	
+	free(enemyArr);
+	
+	
+	/*
+	Current map of enemy IDs
+	0 = cacti_single_large.png
+	1 = cacti_single_small.png
+	2 = cacti_2x_large.png
+	3 = cacti_2x_small.png
+	4 = cacti_quad.png
+	5 = cacti_trio.png
+	6 = bird_1.png
+	7 = bird_2.png
+	999 = No enemy found
+	*/
+	
+	/*
+	for (int k = 0; k < 355; k++) {
+		string filePath = "../Screenshots_Joel/"; //path string
+		string fileName = "img_" + to_string(k) + ".csv"; //create filename string
+		string fullFileName = filePath+fileName;
+		cout << k << " ";
+		testImg = CSVtoMat(150, 600, fullFileName);
+		
+		enemyArr = getEnemy(testImg, 0.05, 0);
+		//cout << "Image " << k << ":" << test << endl;
+	}
+	*/
 	return 0;
 }
 
