@@ -39,7 +39,7 @@ sleep 5
 
 for (( i=$firstX; i<$(($firstX + $N)); i++))
 do
-    google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/dino/$i --no-first-run &>> log.txt &
+    google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/$USER/dino/$i --no-first-run &>> log.txt &
 done
 
 sleep 15
