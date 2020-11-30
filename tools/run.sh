@@ -1,8 +1,16 @@
 
 #!/bin/bash
 
+N=$((1))
+
+while getopts N: flag
+do
+    case "${flag}" in
+        N) N=${OPTARG};;
+    esac
+done
+
 # number of instances
-N=$((15))
 rootDisplay=$DISPLAY
 
 echo "Launched from display "$rootDisplay

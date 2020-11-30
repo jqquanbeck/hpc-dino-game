@@ -37,5 +37,5 @@ $ make                                                        # Make the project
 
 The project can be run using the provided batching tool `./tools/run.sh` from the project's root folder to run an array of instances for training.
 ``` bash
-$ ./tools/run.sh
+$ ./tools/run.sh -N 15 # -N to decide the number of instances (one by default)
 ```
