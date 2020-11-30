@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # number of instances
-N=$((5))
+N=$((15))
 rootDisplay=$DISPLAY
 
 echo "Launched from display "$rootDisplay
@@ -31,9 +31,17 @@ for (( i=$firstX; i<$(($firstX + $N)); i++))
 do
     export DISPLAY=$rootDisplay
     echo "Launching window "$i
-    Xnest :$i -geometry 600x150+0+$((50 + 200 * ($i - $firstX))) -bw 0 &
-    google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/dino/$i --no-first-run &
+    Xnest :$i -geometry 600x150+$((20 + 610 * (($i - $firstX) / 5)))+$((50 + 200 * (($i - $firstX) % 5))) -bw 0 &
 done
 
 sleep 5
+
+for (( i=$firstX; i<$(($firstX + $N)); i++))
+do
+    google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/dino/$i --no-first-run &
+done
+
+sleep 15
+read -p "Press enter to continue when all chrome windows are loaded."
+
 python3 ./dinoai.py $N $firstX

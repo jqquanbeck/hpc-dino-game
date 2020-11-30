@@ -60,6 +60,7 @@ envlib::dinoInterface::~dinoInterface(){
     XCloseDisplay(_display);
 }
 
+/*
 int envlib::dinoInterface::getScore(uint32_t &score){
     getScreenshot(_display, _window, _img);
 
@@ -67,8 +68,12 @@ int envlib::dinoInterface::getScore(uint32_t &score){
 
     return 0; // success
 }
+*/
 
-int envlib::dinoInterface::getObservation(uint32_t obs[13]){
+int envlib::dinoInterface::getObservation(uint32_t obs[15]){
+
+    getScreenshot(_display, _window, _img);
+
     for (int i = 0; i < OBS_SIZE; ++i)
         obs[i] = i; // temp arbitrary value
 
