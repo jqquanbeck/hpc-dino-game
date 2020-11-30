@@ -6,9 +6,12 @@ using namespace envlib;
 using namespace inputlib;
 using namespace std;
 
-void envlib::envlib(){
-    cout << "Hello from envlib" << endl;
-}
+// void envlib::envlib(int out[3]){
+//     out[0] = 100;
+//     out[1] = 200;
+//     out[2] = 300;
+//     cout << "Hello from envlib" << endl;
+// }
 
 envlib::dinoInterface::dinoInterface(int dispId){
     printf("---------------- %d constructor ---------------\n", dispId);

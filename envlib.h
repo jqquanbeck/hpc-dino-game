@@ -10,7 +10,7 @@
 
 namespace envlib{
 
-    void envlib(); // hello world function
+    // void envlib(int out[3]); // hello world function
 
     class dinoInterface{
         public:

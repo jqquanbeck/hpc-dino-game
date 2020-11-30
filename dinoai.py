@@ -16,4 +16,7 @@ firstDisplay = int( argv[2] )
 print( f"\n\n==================== Starting DinoAI ====================\n" )
 print( f"Batch size = {N}\n\n" )
 
-pyhandlerInit( N, firstDisplay )
+
+
+# pyhandlerGetObservation(1)
+# pyhandlerInit( N, firstDisplay )
