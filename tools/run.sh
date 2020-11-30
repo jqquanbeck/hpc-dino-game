@@ -13,6 +13,7 @@ killall Xnest -s SIGKILL
 echo "Removing temporary files"
 rm -rf /tmp/dino/*
 rm -rf /tmp/.X11-unix/*
+rm log.txt
 
 # determine highest X display number in use
 highestX=$(ls /tmp/.X11-unix | cut -c2- | sort -n | tail -1)
