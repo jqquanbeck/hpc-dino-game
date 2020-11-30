@@ -6,7 +6,7 @@
 
 #include "inputlib.h"
 
-#define OBS_SIZE 13
+#define OBS_SIZE 15 //4 enemies * 3 fields per enemy + 1 for height + 1 for score = 15
 
 namespace envlib{
 
@@ -20,8 +20,8 @@ namespace envlib{
 
             enum Action { NONE, UP, DOWN };
 
-            int getScore(uint32_t &score);
-            int getObservation(uint32_t *obs[OBS_SIZE]);
+            //int getScore(uint32_t &score);
+            int getObservation(uint32_t *obs[OBS_SIZE], uint32_t &score);
             int setAction(dinoInterface::Action action);
 
             // for testing only

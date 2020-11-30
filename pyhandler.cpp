@@ -25,14 +25,17 @@ int pyhandler::init(uint32_t N, uint32_t firstDisplay)
     return 0; // success
 }
 
+/*
 int pyhandler::getScore(uint32_t i, uint32_t &score)
 {
     return _environments.at(i).getScore(score);
 }
+*/
 
-int pyhandler::getObservation(uint32_t i, uint32_t *obs[OBS_SIZE])
+//int pyhandler::getObservation(uint32_t i, uint32_t *obs[OBS_SIZE])
+int pyhandler::getObservation(uint32_t i, uint32_t *obs[OBS_SIZE], uint32_t &score)
 {
-    return _environments.at(i).getObservation(obs);
+    return _environments.at(i).getObservation(obs, score);
 }
 
 int pyhandler::setAction(uint32_t i, uint32_t action)

@@ -12,8 +12,9 @@ class pyhandler
 {
     public:
         static int init(uint32_t N, uint32_t firstDisplay);
-        static int getScore(uint32_t i, uint32_t &score);
-        static int getObservation(uint32_t i, uint32_t *obs[OBS_SIZE]);
+        //static int getScore(uint32_t i, uint32_t &score);
+        //static int getObservation(uint32_t i, uint32_t *obs[OBS_SIZE]);
+		static int getObservation(uint32_t i, uint32_t *obs[OBS_SIZE], uint32_t &score);
         static int setAction(uint32_t i, uint32_t action);
         // enum Action { NONE, UP, DOWN };
 
