@@ -31,6 +31,6 @@ unsigned char ** CSVtoArr(int rows, int cols);
 
 enemy_t * getEnemy(Mat Img, float tolerance, bool isNight);
 
-
+int dinoHeight(Mat Img, bool isNight);
 
 #endif
