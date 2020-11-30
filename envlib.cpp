@@ -13,16 +13,37 @@ void envlib::envlib(){
 envlib::dinoInterface::dinoInterface(int dispId){
     printf("---------------- %d constructor ---------------\n", dispId);
 
-     char displayName[10];
+    char displayName[10];
     sprintf(displayName, ":%d", dispId);
     _display = XOpenDisplay(displayName);
-    _window = XDefaultRootWindow(_display);
 
-    if (_display == NULL)
+    Window rootWindow = XDefaultRootWindow(_display);
+
+    if (_display == nullptr)
     {
         fprintf(stderr, "Cannot open display %s\n", displayName);
         exit(1);
     }
+
+    if (_window == BadWindow)
+    {
+        fprintf(stderr, "Cannot open root window\n");
+        exit(1);
+    }
+
+    Window rootReturn, parentReturn;
+    Window *children;
+    unsigned int nChildren;
+
+    XQueryTree(_display, rootWindow, &rootReturn, &parentReturn, &children, &nChildren);
+
+    if (children[3] == BadWindow)
+    {
+        fprintf(stderr, "Cannot open Chrome window\n");
+        exit(1);
+    }
+
+    _window = children[3];
 
     initWindow(_display, _window);
 }

@@ -23,19 +23,14 @@ using namespace std;
 
 int inputlib::initWindow(Display *display, Window window){
     printf("Navigating to chrome://dino\n");
-    //Window window = XDefaultRootWindow(display);
 
-    Window root, parent;
-    Window *children;
-    unsigned int nChildren;
-
-    XQueryTree(display, window, &root, &parent, &children, &nChildren);
-
-    XMoveResizeWindow(display, children[3], 0, 0, 600, 150);
+    XMoveResizeWindow(display, window, 0, 0, 600, 150);
 
     // Navigate to chrome://dino
     typeString(display, (char*)("chrome://dino"));
     tapKey(display, XK_KP_Enter);
+
+    usleep(5000000);
 
     // Go fullscreen with F11
     printf("Entering fullscreen mode\n");
