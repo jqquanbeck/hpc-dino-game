@@ -7,27 +7,43 @@
 #include "opencv2/imgproc.hpp"
 #include <omp.h>
 #include <stdio.h>
+#include "Matchlib.hpp"
 
 using namespace std;
 using namespace cv;
 
 
-vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance) {
+vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float threshold, float tolerance) {
 	vector<Point> matchLocations;
 	Point tempLoc;
 	Mat result; //mat object to store the result of the template match algo	
 	int result_rows = srcImg.rows - templImg.rows + 1; //calculate result image rows
 	int result_cols = srcImg.cols - templImg.cols + 1; //calculate result image cols
 
-	result = Mat(result_rows, result_cols, CV_32FC1); //create mat to hold result of template match CV_8UC1
-  
-	matchTemplate(srcImg, templImg, result, TM_CCOEFF_NORMED); //perform template matching	TM_SQDIFF_NORMED
-
+	result = Mat(result_rows, result_cols, CV_32FC1); //create mat to hold result of template match CV_8UC1	
+	
+	matchTemplate(srcImg, templImg, result, TM_SQDIFF_NORMED); //perform template matching	 TM_CCOEFF_NORMED
+	
+	double minVal; double maxVal; Point minLoc; Point maxLoc; //localize the best match with minMaxLoc
+	minMaxLoc( result, &minVal, &maxVal, &minLoc, &maxLoc, Mat() );
+	//cout << "("<< minLoc.x << "," << minLoc.y << ") = " << minVal << endl;
+	
+	for (int x = 0; x < result.cols; x++) {
+		for (int y = 0; y < result.rows; y++) {
+			if(result.at<float>(y,x) <= (1+tolerance)*threshold) { //If there are other locations where the result value is within tolerance% of the lowest, it's a second match.
+				//cout << "("<< x << "," << y << ") = " << result.at<float>(y,x) << endl;
+				tempLoc.x = x;
+				tempLoc.y = y;
+				matchLocations.push_back(tempLoc);
+			}
+		}
+	}
+	
+	/*
 	normalize(result, result, 0.0, 1.0, NORM_MINMAX); //normalize the result NORM_MINMAX
 	
 	cout.precision(5);
-	//cout << "Result size: " << result.rows << "," << result.cols << "(rows,cols)" << endl;
-	
+
 	double minVal; double maxVal; Point minLoc; Point maxLoc; //localize the best match with minMaxLoc
 	minMaxLoc( result, &minVal, &maxVal, &minLoc, &maxLoc, Mat() );
 	
@@ -35,13 +51,14 @@ vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float tolerance) {
 	for (int x = 0; x < result.cols; x++) {
 		for (int y = 0; y < result.rows; y++) {
 			if(result.at<float>(y,x) >= tolerance) {
-				//cout << x+templImg.cols/2 << "," << y+templImg.rows/2 << ": " << result.at<float>(y,x) << endl;
-				tempLoc.x = x+templImg.cols/2;
-				tempLoc.y = y+templImg.rows/2;
+				//cout << x << "," << y << ": " << result.at<float>(y,x) << endl;
+				tempLoc.x = x;
+				tempLoc.y = y;
 				matchLocations.push_back(tempLoc);
 			}
 		}
 	}
+	*/
 	
 	return matchLocations;
 }
@@ -146,6 +163,8 @@ Mat CSVtoMat(int rows, int cols, string filepath) {
 		}
 	}
 	
+	myfile.close();
+	
 	return CSVImg;
 }	
 
@@ -153,6 +172,7 @@ unsigned char ** CSVtoArr(int rows, int cols, string filepath) {
 	//this function sucks because it doesn't automatically determine size of CSV
 	//find some way to make the mat automatically the size of the CSV without much overhead.
 	
+	/*
 	unsigned char ** arr[rows][cols];
 	ifstream myfile(filepath); //open csv file
 	
@@ -168,4 +188,36 @@ unsigned char ** CSVtoArr(int rows, int cols, string filepath) {
 	}
 	
 	return arr;
+	*/
 }	
+
+enemy_t getEnemy(Mat Img, float tolerance, bool isNight) {
+	Mat result;
+
+	string filePath = "../../dinosprite/smaller/regular/";
+	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};\
+	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; //only the cacti_single_large is correct. fill out the rest
+	vector<Point> EnemyLoc[8];
+	
+	for( int i = 0; i < sizeof(fileName)/sizeof(fileName[0]); i++) { //iterate through each sprite
+		Mat enemyTemplate = imread(filePath+fileName[i], IMREAD_GRAYSCALE);
+		int result_rows = Img.rows - enemyTemplate.rows + 1; //calculate result image rows
+		int result_cols = Img.cols - enemyTemplate.cols + 1; //calculate result image cols
+		EnemyLoc[i] = TemplateMatch(Img, enemyTemplate, 0.0119287, 0.05);
+		
+		if(EnemyLoc[i].size() != 0)
+			cout << "Match(es) found!! File: " << fileName[i] << ", Number of matches = " << EnemyLoc[i].size() << ". Locations: ";
+		for(int j = 0; j < EnemyLoc[i].size(); j ++) {
+			cout << "(" << EnemyLoc[i].at(j).x << "," << EnemyLoc[i].at(j).y << ")  ";
+		}
+		if(EnemyLoc[i].size() != 0)
+			cout << endl;
+	}
+	
+
+		
+
+		
+	enemy_t asdf = {69, 420, 99}; //return so it doesn't break
+	return asdf;
+} 

@@ -12,16 +12,26 @@
 using namespace std;
 using namespace cv;
 
-int main1();
+//int main1();
 int main2();
+int main3();
+int main4();
+
+
 
 int main() {
-	//main1();
-	//main2();
-	main3();
+	main4();
 	return 0;
 }
 
+int main4() {
+	Mat testImg = CSVtoMat(150, 600, "../Screenshots_Joel/img_108_d.csv");
+	enemy_t bird = getEnemy(testImg, 0.99, 0);
+	//cout << bird.x << " " << bird.y << " " << bird.ID << endl;
+	return 0;
+}
+
+/*
 int main1()
 {
 	Mat CSVImg, templateImg; //Create two Mat objects, one for the source image, one for the template
@@ -104,6 +114,7 @@ int main1()
 	
 	return EXIT_SUCCESS;
 }
+*/
 
 int main2() {
 	Mat testImg = Mat(150, 600, CV_8UC1);
@@ -126,9 +137,11 @@ int main2() {
 }
 
 int main3() {
-	
+	/*
 	char 
 	CSVtoArr(150, 600);
 	
 	return EXIT_SUCCESS;
+	*/
 }
+
