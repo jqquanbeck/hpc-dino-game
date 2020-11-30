@@ -20,7 +20,7 @@ def pyhandlerGetScore( i ):
 
 # === this one ======
 def pyhandlerGetObservation( i ):
-    getObservation = __CDinolib__._ZN6envlib13dinoInterface14getObservationEPPj
+    getObservation = __CDinolib__._ZN6envlib13dinoInterface14getObservationEPj
     getObservation.argtypes = ( c_uint32, c_uint32 * 13 )
     getObservation.restype = c_int
     observation = ( c_uint32 * 13 )()

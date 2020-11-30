@@ -18,5 +18,5 @@ print( f"Batch size = {N}\n\n" )
 
 
 
-# pyhandlerGetObservation(1)
+print( pyhandlerGetObservation(1) ) 
 # pyhandlerInit( N, firstDisplay )

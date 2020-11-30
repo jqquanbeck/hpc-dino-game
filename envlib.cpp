@@ -68,9 +68,9 @@ int envlib::dinoInterface::getScore(uint32_t &score){
     return 0; // success
 }
 
-int envlib::dinoInterface::getObservation(uint32_t *obs[13]){
+int envlib::dinoInterface::getObservation(uint32_t obs[13]){
     for (int i = 0; i < OBS_SIZE; ++i)
-        *obs[i] = i; // temp arbitrary value
+        obs[i] = i; // temp arbitrary value
 
     return 0; // success
 }
@@ -81,7 +81,7 @@ int envlib::dinoInterface::setAction(dinoInterface::Action action){
             releaseKey(_display, XK_Up);
             releaseKey(_display, XK_Down);
             break;
-        
+
         case UP:
             releaseKey(_display, XK_Down);
             pressKey(_display, XK_Up);

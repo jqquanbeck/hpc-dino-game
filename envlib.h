@@ -21,7 +21,7 @@ namespace envlib{
             enum Action { NONE, UP, DOWN };
 
             int getScore(uint32_t &score);
-            int getObservation(uint32_t *obs[OBS_SIZE]);
+            int getObservation(uint32_t obs[OBS_SIZE]);
             int setAction(dinoInterface::Action action);
 
             // for testing only
