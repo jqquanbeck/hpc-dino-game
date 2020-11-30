@@ -70,11 +70,9 @@ int envlib::dinoInterface::getScore(uint32_t &score){
 }
 */
 
-int envlib::dinoInterface::getObservation(uint32_t *obs[15], uint32_t &score){
+int envlib::dinoInterface::getObservation(uint32_t obs[15]){
 
     getScreenshot(_display, _window, _img);
-
-    score = 10; // temp arbitrary value
 
     for (int i = 0; i < OBS_SIZE; ++i)
         obs[i] = i; // temp arbitrary value
