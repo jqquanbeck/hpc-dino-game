@@ -1,4 +1,5 @@
 from translator import *
+import time
 import sys
 
 argc = len(sys.argv)
@@ -18,5 +19,14 @@ print( f"Batch size = {N}\n\n" )
 
 
 
+pyhandlerInit( N, firstDisplay )
+
+time.sleep(5)
+
 print( pyhandlerGetObservation(1) ) 
-# pyhandlerInit( N, firstDisplay )
+
+# jump forever
+while 1:
+    for i in range(N):
+        pyhandlerSetAction(i, 1) # up
+        pyhandlerSetAction(i, 0) # none

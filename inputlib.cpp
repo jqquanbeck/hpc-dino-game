@@ -30,8 +30,6 @@ int inputlib::initWindow(Display *display, Window window){
     typeString(display, (char*)("chrome://dino"));
     tapKey(display, XK_KP_Enter);
 
-    usleep(5000000);
-
     // Go fullscreen with F11
     printf("Entering fullscreen mode\n");
     tapKey(display, XK_F11);
