@@ -13,5 +13,7 @@ if(argc != 3 ):
 N = int( argv[1] )
 firstDisplay = int( argv[2] )
 
-print(f"\n\n==================== Starting DinoAI ====================\n");
-print(f"Batch size = {N}\n\n");
+print( f"\n\n==================== Starting DinoAI ====================\n" )
+print( f"Batch size = {N}\n\n" )
+
+pyhandlerInit( N, firstDisplay )
