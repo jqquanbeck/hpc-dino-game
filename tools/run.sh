@@ -12,6 +12,7 @@ killall Xnest -s SIGKILL
 
 echo "Removing temporary files"
 rm -rf /tmp/dino/*
+rm -rf /tmp/.X11-unix/*
 
 # determine highest X display number in use
 highestX=$(ls /tmp/.X11-unix | cut -c2- | sort -n | tail -1)
@@ -35,4 +36,4 @@ do
 done
 
 sleep 5
-../Dinoai/Dinoai.out $N $firstX
+python3 ./dinoai.py $N $firstX
