@@ -27,12 +27,26 @@ from translator import *
 
 class DinoPolicy(tf_policy.TFPolicy):
     def __init__(self):
-        observation_spec = tensor_spec.BoundedTensorSpec(
-            shape=(1,), dtype=tf.int32, minimum=-2, maximum=2)
-        time_step_spec = ts.time_step_spec(observation_spec)
-
-        action_spec = tensor_spec.BoundedTensorSpec(
-            shape=(), dtype=tf.int32, minimum=0, maximum=2)
+        self._observation_spec = array_spec.BoundedArraySpec(
+            shape   = (14,), 
+            dtype   = np.int32, 
+            minimum = [0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
+            maximum = [
+                600,150,6,     # Enemy 1
+                600,150,6,     # Enemy 2
+                600,150,6,     # Enemy 3
+                600,150,6,     # Enemy 4
+                100,2147483647 # Dino Jump and Score
+            ],
+            name    = "observation"
+        )
+        self._action_spec = array_spec.BoundedArraySpec(
+            shape   = (), 
+            dtype   = np.int32, 
+            minimum = 0, # [Jump, None, Duck] 
+            maximum = 2, 
+            name    = "action"
+        )
 
         super(DinoPolicy, self).__init__(time_step_spec=time_step_spec,
                                         action_spec=action_spec)

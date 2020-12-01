@@ -28,11 +28,27 @@ from translator import *
 # === STRAIGHT FROM EXAMPLE ======================
 class TwoWayPyEnvironment(BanditPyEnvironment):
 
-  def __init__(self):
-    action_spec = array_spec.BoundedArraySpec(
-        shape=(), dtype=np.int32, minimum=0, maximum=2, name='action')
-    observation_spec = array_spec.BoundedArraySpec(
-        shape=(1,), dtype=np.int32, minimum=-2, maximum=2, name='observation')
+    def __init__(self):
+        self._observation_spec = array_spec.BoundedArraySpec(
+            shape   = (14,), 
+            dtype   = np.int32, 
+            minimum = [0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
+            maximum = [
+                600,150,6,     # Enemy 1
+                600,150,6,     # Enemy 2
+                600,150,6,     # Enemy 3
+                600,150,6,     # Enemy 4
+                100,2147483647 # Dino Jump and Score
+            ],
+            name    = "observation"
+        )
+        self._action_spec = array_spec.BoundedArraySpec(
+            shape   = (), 
+            dtype   = np.int32, 
+            minimum = 0, # [Jump, None, Duck] 
+            maximum = 2, 
+            name    = "action"
+        )
 
     # Flipping the sign with probability 1/2.
     self._reward_sign = 2 * np.random.randint(2) - 1
@@ -41,11 +57,11 @@ class TwoWayPyEnvironment(BanditPyEnvironment):
 
     super(TwoWayPyEnvironment, self).__init__(observation_spec, action_spec)
 
-  def _observe(self):
-    self._observation = np.random.randint(-2, 3, (1,), dtype='int32')
-    return self._observation
+    def _observe(self):
+        self._observation = np.random.randint(-2, 3, (1,), dtype='int32')
+        return self._observation
 
-  def _apply_action(self, action):
-    return self._reward_sign * action * self._observation[0]
+    def _apply_action(self, action):
+        return self._reward_sign * action * self._observation[0]
 
 two_way_tf_environment = tf_py_environment.TFPyEnvironment(TwoWayPyEnvironment())
