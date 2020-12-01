@@ -173,11 +173,12 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
 	enemy_t * enemyStruct = (enemy_t*) malloc( (maxEnemies+1) * sizeof(enemy_t) ); //initialize. The +1 fixes a memory issue i guess
 	
 	//these should probably be stored in a struct but too bad
+	string filePath;
 	if(isNight == true) {
-		string filePath = "Resources/smaller/inverted/";
+		filePath = "Resources/smaller/inverted/";
 	}
 	else {
-		string filePath = "Resources/smaller/regular/";
+		filePath = "Resources/smaller/regular/";
 	}
 	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};
 	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; 
