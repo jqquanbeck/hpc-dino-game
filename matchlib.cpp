@@ -50,7 +50,7 @@ uint32_t isNight(Mat Img)
 	for (int i = 0; i < numPoints; i++) {
 		avg += (int)Img.at<uchar>( coords[i][1], coords[i][0] );
 	}
-	avg = avg/numPoints;
+	avg /= numPoints;
 	
 	if(avg <= 128) {
 		return (uint32_t) 1;

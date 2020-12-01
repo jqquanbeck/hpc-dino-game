@@ -11,24 +11,38 @@ The cmake project was created using visual studio 2019 though the default cmake 
 The project directory `Dinoai` contains the main entrypoint `Dinoai.cpp` and the two libraries `Inputlib` and `Matchlib` where `Inputlib` is a library for accessing bitmap information of the game though `LibX11` and `Matchlib` is a library for image matching functions utlizing `OpenCV`.
 
 ## Build
-### Cmake Installation
-Dinoai uses Cmake to provide automatic makefile generation. If cmake is not installed on your system, for Windows, install you system's specific installation from https://cmake.org/download/. If you are on linux instead, using your preferred package manager of choice, install `cmake`.
 
-Apt Package Manager:
-```bash
-$ sudo apt-get install cmake
+### Installation and building
+The project's Python scripts will run within a virtual python environment. First, create a launch virtual environment.
 ```
+$ python3 -m venv --system-site-packages ./venv
+$ source ./venv/bin/activate
+```
+To deactivate the virtual environemtn later (once you are done working with the project), run:
+```
+(venv) $ deactivate
+```
+Install the necessary packages
+```
+(venv) $ pip install --upgrade pip
+(venv) $ pip install --upgrade tensorflow
+```
+Verify the installation of Tensorflow
+```
+(venv) $ python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+```
+Once the virtual environment has been configured, it can be reused in the future without repeating the installation steps.
 
-### Dependency installation
-Unfortunately, the design of Cmake leaves dependencies to the user, and the dependent libraries must be installed individually . This being said, the cmake script is designed to find the library's details automagically; this makes installation somewhat easier as the script will find the installed libraries no matter the system; if the script cannot find the library in question, you can supply the library's path using the command line.
-
-The project currently uses `OpenCV` and `LibX11` where both are avaialbe on unix systems. X11 is technically avaiable on windows, although it seems to be proprietary code. One note to be made about `OpenCV` dependencies is that there exist "hidden" dependencies that are not installed when OpenCV is installed. The hidden dependencies were as follows: `glew`, `libqt5widgets5`, and `hdf5`.
-
-### Cmake Usage
-Cmake will generate a makefile with the first invocation of cmake, and the second invocation will run the generated makefile and output to `"./build"`.
+The project can then be cloned onto the server and then built using make.
 ``` bash
 $ git clone "https://github.com/jqquanbeck/hpc-dino-game.git" # Clone code
 $ cd hpc-dino-game                                            # Move into directory
-$ cmake --parallel -S "." -B "./build"                        # Generate Makefile
-$ cmake --build  "./build" --verbose --parallel               # Execute Makefile
+$ make                                                        # Make the project
+```
+
+### Running the code
+
+The project can be run using the provided batching tool `./tools/run.sh` from the project's root folder to run an array of instances for training.
+``` bash
+$ ./tools/run.sh -N 15 # -N to decide the number of instances (one by default)
 ```

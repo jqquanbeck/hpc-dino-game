@@ -1,4 +1,5 @@
 from translator import *
+import dinobrain
 import time
 import sys
 
