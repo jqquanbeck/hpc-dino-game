@@ -13,18 +13,25 @@ The project directory `Dinoai` contains the main entrypoint `Dinoai.cpp` and the
 ## Build
 
 ### Installation and building
-Installation is simple, but limited to building on the IRIS server on the SDSU campus cluster.
-
-First, several modules have to be loaded to build and execute the code. The code relies on several specific packages available on the IRIS cluster. This process is necessary each time you log on the cluster.
-``` bash
-$ module load spack libx11 python/3.7 tensorflow/1.11.0-gpu 
+The project's Python scripts will run within a virtual python environment. First, create a launch virtual environment.
 ```
-
-Alternatively, one can save the current collection of packages with `module save` to the default user profile and then restore them using `module restore`
-``` bash
-$ module save
-$ module restore
+$ python3 -m venv --system-site-packages ./venv
+$ source ./venv/bin/activate
 ```
+To deactivate the virtual environemtn later (once you are done working with the project), run:
+```
+(venv) $ deactivate
+```
+Install the necessary packages
+```
+(venv) $ pip install --upgrade pip
+(venv) $ pip install --upgrade tensorflow
+```
+Verify the installation of Tensorflow
+```
+(venv) $ python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+```
+Once the virtual environment has been configured, it can be reused in the future without repeating the installation steps.
 
 The project can then be cloned onto the server and then built using make.
 ``` bash
