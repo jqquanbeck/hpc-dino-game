@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import PIL.Image
 import pyvirtualdisplay
+import time
 
 import tensorflow as tf
 
@@ -82,5 +83,7 @@ class DinoBanditEnv(py_environment.PyEnvironment):
         """Applies `action` to the Environment and returns the corresponding reward.
         """
         pyhandlerSetAction(self.cinstance, action)
+        time.sleep(0.1) # wait a bit to see result of action
 
-        return pyhandler
+        newObs = pyhandlerGetObservation(self.cinstance)
+        return obs[13] - self.observation[13] # score change
