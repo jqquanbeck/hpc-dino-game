@@ -39,7 +39,7 @@ vector<Point> TemplateMatch(Mat srcImg, Mat templImg, float threshold, float tol
 	return matchLocations;
 }
 
-bool isNight(Mat Img)
+uint32_t isNight(Mat Img)
 {
 	//Samples are (413,25), (422, 22), and (407,20)
 	//These lie between the H and I, in the crook of the I, and in the crook of the H, respectively
@@ -53,14 +53,14 @@ bool isNight(Mat Img)
 	avg /= numPoints;
 	
 	if(avg <= 128) {
-		return true;
+		return (uint32_t) 1;
 	}
 	else {
-		return false;
+		return (uint32_t) 0;
 	}
 }
 
-int getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not cropped) and determines the score
+uint32_t getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not cropped) and determines the score
 	//this will load the num_all.png image every time this function is called, which is super inefficient
 		//Find some way to save that loading
 		//probably just open the numbers once in main and pass them into the function each time?
@@ -71,15 +71,15 @@ int getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not cropp
 	//basically instead of looking for each number within the extracted digit,
 	//we look for where the extracted digit best matches an image containing each number
 	
-	int score = 0;
+	uint32_t score = 0;
 	int coords[][2] = {{547,20}, {536,20}, {525,20}, {514,20}, {503,20} }; //locations of the TOP LEFT corner of each score digit
 	
-	//using "smaller" sprite seems to give erroneous results. For such a easy TM, using the smaller sprite doesn't save much time anyway
+	//using "smaller" sprite seems to give erroneous results. For such a small TM, using the smaller sprite doesn't save much time anyway
 	string numImgLoc;
 	if (isNight == true) //nighttime
-		numImgLoc = "../../dinosprite/fullsize/inverted/num_all.png"; 
+		numImgLoc = "Resources/fullsize/inverted/num_all.png"; 
 	else //daytime
-		numImgLoc = "../../dinosprite/fullsize/regular/num_all.png";
+		numImgLoc = "Resources/fullsize/regular/num_all.png"; 
 	
 	Mat numImg = imread(numImgLoc, IMREAD_GRAYSCALE); //mat to hold the template numbers
 	Mat scoreImg[5] = Mat(11, 9, CV_8UC1); //array of mats to hold the captured scores from the screenshot
@@ -87,9 +87,8 @@ int getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not cropp
 	Mat result; //mat object to store the result of the template match algo
 	
 	//prepare image for template matching
-	for(int digit = 0; digit < sizeof(scoreImg)/sizeof(scoreImg[0]); digit++) { //for each digit
+	for(unsigned int digit = 0; digit < sizeof(scoreImg)/sizeof(scoreImg[0]); digit++) { //for each digit
 		scoreImg[digit] = Img( Rect( coords[digit][0], coords[digit][1], 9, 11) ); //crop the image
-		imwrite("output/scoreImg(" + to_string(digit) + ").png" , scoreImg[digit]); //write each score image to PNG for debug
 	}
 	
 	for (int digit = 0; digit <= 4; digit++) { //for each digit
@@ -111,7 +110,7 @@ int getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not cropp
 		}
 		
 		int factor = (tempScoreLoc+1) / 10; //thanks joel
-		score += factor*pow(10,digit);
+		score += (uint32_t) factor*pow(10,digit);
 	}
 	
 	return score;
@@ -162,34 +161,85 @@ unsigned char ** CSVtoArr(int rows, int cols, string filepath) {
 	
 	return arr;
 	*/
+	return 0;
 }	
 
-enemy_t getEnemy(Mat Img, float tolerance, bool isNight) {
-	Mat result;
+enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
+	//If there are more matches on screen than maxEnemies allows for, the matches are returned in prioritiy based on the order of the fileName string 
+	//(e.g. cacti_single_large has higher priority than bird_2)
+	//The amount of returned matches had to be constrained because the NN has to have a known input size
 
-	string filePath = "../../dinosprite/smaller/regular/";
-	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};\
-	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; //only the cacti_single_large is actually real 
-	//the rest may(?) need to be determined manually by sampling a screenshot known to have a given sprite on it
-	vector<Point> EnemyLoc[8];
+	//enemy_t * enemyStruct = (enemy_t*) malloc( maxEnemies * sizeof(enemy_t*) ); //initialize 
+	enemy_t * enemyStruct = (enemy_t*) malloc( (maxEnemies+1) * sizeof(enemy_t) ); //initialize. The +1 fixes a memory issue i guess
 	
-	for( int i = 0; i < sizeof(fileName)/sizeof(fileName[0]); i++) { //iterate through each sprite
-		Mat enemyTemplate = imread(filePath+fileName[i], IMREAD_GRAYSCALE);
-		EnemyLoc[i] = TemplateMatch(Img, enemyTemplate, 0.0119287, 0.05);
-		
-		if(EnemyLoc[i].size() != 0)
-			cout << "Match(es) found!! File: " << fileName[i] << ", Number of matches = " << EnemyLoc[i].size() << ". Locations: ";
-		for(int j = 0; j < EnemyLoc[i].size(); j ++) {
-			cout << "(" << EnemyLoc[i].at(j).x << "," << EnemyLoc[i].at(j).y << ")  ";
-		}
-		if(EnemyLoc[i].size() != 0)
-			cout << endl;
+	//these should probably be stored in a struct but too bad
+	if(isNight == true) {
+		string filePath = "Resources/smaller/inverted/";
+	}
+	else {
+		string filePath = "Resources/smaller/regular/";
+	}
+	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};
+	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; 
+	
+	//only the cacti_single_large is a real number. 
+	//The rest should probably be filled out based on testing on screencaps where a given sprite is known to exist
+	
+	vector<Point> EnemyLoc[8]; //8 vectors of points for 8 sprites. should be defined based on size of file name lol
+	
+	for(unsigned int i = 0; i < sizeof(fileName)/sizeof(fileName[0]); i++) { //iterate through each sprite
+		Mat enemyTemplate = imread(filePath+fileName[i], IMREAD_GRAYSCALE); //read the sprite
+		EnemyLoc[i] = TemplateMatch(Img, enemyTemplate, thresholds[i], tolerance); //match the sprite with the provided image
 	}
 	
+	int enemyNumber = 0; //this stores how many enemies have been matched
+	
+	//probably not the best way to do this?
+	for(unsigned int i = 0; i <  sizeof(fileName)/sizeof(fileName[0]); i++) { //for each sprite
+		for(unsigned int j = 0; j < EnemyLoc[i].size(); j ++) { //for each match of that sprite (enemyloc.size() could be 0!)
+			if(enemyNumber < maxEnemies) {
+				enemyStruct[enemyNumber].x =  (uint32_t) EnemyLoc[i].at(j).x;
+				enemyStruct[enemyNumber].y =  (uint32_t) EnemyLoc[i].at(j).y;
+				enemyStruct[enemyNumber].ID = (uint32_t) i;
+				enemyNumber++;
+			}
+		}
+	}
+	
+	if(enemyNumber < maxEnemies) { //if you didn't use up all the available enemy slots
+		for(int k = maxEnemies; k >= enemyNumber; k--) { //fill the rest with junk info
+			enemyStruct[k].x =  (uint32_t) 999;
+			enemyStruct[k].y =  (uint32_t) 999;
+			enemyStruct[k].ID = (uint32_t) 8;
+		}
+	}
+	
+	//this can probably be removed. Its supposed to free the memory used by enemyloc
+	for( int i = 0; i < 8; i++) {
+		vector<Point>().swap(EnemyLoc[i]);
+	}
 
-		
-
-		
-	enemy_t asdf = {69, 420, 99}; //return so it doesn't break
-	return asdf;
+	return enemyStruct;
 } 
+
+uint32_t dinoHeight(Mat Img, bool isNight) {
+	
+	string filePath;
+	if (isNight == true)
+		filePath = "Resources/smaller/inverted/dino_head.png";
+	else
+		filePath = "Resources/smaller/regular/dino_head.png";
+	
+	Mat dinoTemplate = imread(filePath, IMREAD_GRAYSCALE); //read the sprite
+	
+	vector<Point> dino;
+	
+	dino = TemplateMatch(Img, dinoTemplate, 0.0119287, 0.5); //match the sprite with the provided image at 50% tolerance
+	
+	if(dino.size() != 0) //if there is a match
+		return (uint32_t)dino.at(0).y;
+	else //if there's no match
+		return (uint32_t) 0; //return garbage
+	
+	
+}
