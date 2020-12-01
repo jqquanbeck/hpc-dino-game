@@ -209,7 +209,7 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
 		for(int k = maxEnemies; k >= enemyNumber; k--) { //fill the rest with junk info
 			enemyStruct[k].x =  (uint32_t) 999;
 			enemyStruct[k].y =  (uint32_t) 999;
-			enemyStruct[k].ID = (uint32_t) 999;
+			enemyStruct[k].ID = (uint32_t) 8;
 		}
 	}
 	
