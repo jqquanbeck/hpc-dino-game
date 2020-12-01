@@ -16,17 +16,39 @@ using namespace cv;
 int main2();
 int main3();
 int main4();
+int main5();
 
 
 
 int main() {
-	main4();
+	main5();
+	return 0;
+}
+
+int main5() {
+	
+	//Mat testImg = CSVtoMat(150, 600, "../Screenshots_Joel/img_108.csv");
+	//int dinoheight = dinoHeight(testImg, 0);
+	int dinoheight;
+	cout << "dinoheight from main = " << dinoheight << endl;
+	
+		string filePath = "../Screenshots_Joel/"; //path string
+	
+	for(int k = 0; k < 355; k++) {
+		string fileName = "img_" + to_string(k) + ".csv"; //create filename string
+		string fullFileName = filePath+fileName;
+		
+		Mat testImg = CSVtoMat(150, 600, fullFileName);
+		dinoheight = dinoHeight(testImg, 0);
+		cout << "img #" << k << " " << "dinoheight from main = " << dinoheight << endl;
+
+	}
+	
 	return 0;
 }
 
 int main4() {
 	//Mat testImg = CSVtoMat(150, 600, "../Screenshots_Joel/img_108.csv");
-	cout << "test" << endl;
 	//enemy_t * enemyArr = (enemy_t*)malloc(6*sizeof(enemy_t*));
 	enemy_t * enemyArr = (enemy_t*)malloc((6+1)*sizeof(enemy_t)); //the +1 fixes a memory issue i guess
 	cout << "test" << endl;
@@ -39,7 +61,7 @@ int main4() {
 		
 		Mat testImg = CSVtoMat(150, 600, fullFileName);
 		//cout << "test" << endl;
-		enemyArr = getEnemy(testImg, 0.05, 0);
+		enemyArr = getEnemy(testImg, 0.05, 0, 6);
 		for(int i = 0; i < 6; i++) {
 			if(enemyArr[i].ID != 999) {
 				cout << "Enemy found in image" << k << "! Located at: (" << enemyArr[i].x << "," << enemyArr[i].y << ") ID: " << enemyArr[i].ID << endl;

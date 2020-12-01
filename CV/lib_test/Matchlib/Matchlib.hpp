@@ -29,7 +29,7 @@ Mat CSVtoMat(int rows, int cols, std::string filepath);
 
 unsigned char ** CSVtoArr(int rows, int cols);
 
-enemy_t * getEnemy(Mat Img, float tolerance, bool isNight);
+enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies);
 
 int dinoHeight(Mat Img, bool isNight);
 

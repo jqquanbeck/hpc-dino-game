@@ -191,17 +191,13 @@ unsigned char ** CSVtoArr(int rows, int cols, string filepath) {
 	*/
 }	
 
-enemy_t * getEnemy(Mat Img, float tolerance, bool isNight) {
-	//This function only returns a total of 6 enemies. It's VERY unlikely (honestly almost impossible) that the game will produces more than that
-	//However, if that were the case, which it won't be, the matches are returned in prioritiy based on the order of the fileName string 
+enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
+	//If there are more matches on screen than maxEnemies allows for, the matches are returned in prioritiy based on the order of the fileName string 
 	//(e.g. cacti_single_large has higher priority than bird_2)
 	//The amount of returned matches had to be constrained because the NN has to have a known input size
-	
-	const int maxEnemies = 6;
+
 	//enemy_t * enemyStruct = (enemy_t*) malloc( maxEnemies * sizeof(enemy_t*) ); //initialize 
 	enemy_t * enemyStruct = (enemy_t*) malloc( (maxEnemies+1) * sizeof(enemy_t) ); //initialize. The +1 fixes a memory issue i guess
-
-	Mat result;
 	
 	//these should probably be stored in a struct but too bad
 	string filePath = "../../dinosprite/smaller/regular/";
@@ -232,7 +228,7 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight) {
 	
 	//probably not the best way to do this?
 	for(int i = 0; i <  sizeof(fileName)/sizeof(fileName[0]); i++) { //for each sprite
-		for(int j = 0; j < EnemyLoc[i].size(); j ++) { //for each match of that sprite (could be 0)
+		for(int j = 0; j < EnemyLoc[i].size(); j ++) { //for each match of that sprite (enemyloc.size() could be 0!)
 			if(enemyNumber < maxEnemies) {
 				enemyStruct[enemyNumber].x = (int)(EnemyLoc[i].at(j).x);
 				enemyStruct[enemyNumber].y = (int)EnemyLoc[i].at(j).y;
@@ -253,9 +249,34 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight) {
 		}
 	}
 	
+	//this can probably be removed. Its supposed to free the memory used by enemyloc
 	for( int i = 0; i < 8; i++) {
 		vector<Point>().swap(EnemyLoc[i]);
 	}
 
 	return enemyStruct;
 } 
+
+int dinoHeight(Mat Img, bool isNight) {
+	
+	string filePath;
+	if (isNight == true)
+		filePath = "../../dinosprite/smaller/inverted/dino_nofeet.png";
+	else
+		filePath = "../../dinosprite/smaller/regular/dino_nofeet.png";
+	
+	Mat dinoTemplate = imread(filePath, IMREAD_GRAYSCALE); //read the sprite
+	
+	vector<Point> dino;
+	
+	dino = TemplateMatch(Img, dinoTemplate, 0.0119287, 0.5); //match the sprite with the provided image at 50% tolerance
+	
+	//cout << "dino height: " << dino.at(0).x << endl;
+	
+	if(dino.size() != 0) //if there is a match
+		return (int)dino.at(0).y;
+	else //if there's no match
+		return 999; //return garbage
+	
+	
+}
