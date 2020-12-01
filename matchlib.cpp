@@ -74,12 +74,12 @@ uint32_t getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not 
 	uint32_t score = 0;
 	int coords[][2] = {{547,20}, {536,20}, {525,20}, {514,20}, {503,20} }; //locations of the TOP LEFT corner of each score digit
 	
-	//using "smaller" sprite seems to give erroneous results. For such a easy TM, using the smaller sprite doesn't save much time anyway
+	//using "smaller" sprite seems to give erroneous results. For such a small TM, using the smaller sprite doesn't save much time anyway
 	string numImgLoc;
 	if (isNight == true) //nighttime
-		numImgLoc = "../../dinosprite/fullsize/inverted/num_all.png"; 
+		numImgLoc = "Resources/fullsize/inverted/num_all.png"; 
 	else //daytime
-		numImgLoc = "../../dinosprite/fullsize/regular/num_all.png";
+		numImgLoc = "Resources/fullsize/regular/num_all.png"; 
 	
 	Mat numImg = imread(numImgLoc, IMREAD_GRAYSCALE); //mat to hold the template numbers
 	Mat scoreImg[5] = Mat(11, 9, CV_8UC1); //array of mats to hold the captured scores from the screenshot
@@ -89,7 +89,6 @@ uint32_t getScore(Mat Img, bool isNight) { //Takes an unaltered image (e.g. not 
 	//prepare image for template matching
 	for(unsigned int digit = 0; digit < sizeof(scoreImg)/sizeof(scoreImg[0]); digit++) { //for each digit
 		scoreImg[digit] = Img( Rect( coords[digit][0], coords[digit][1], 9, 11) ); //crop the image
-		imwrite("output/scoreImg(" + to_string(digit) + ").png" , scoreImg[digit]); //write each score image to PNG for debug
 	}
 	
 	for (int digit = 0; digit <= 4; digit++) { //for each digit
@@ -174,7 +173,12 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
 	enemy_t * enemyStruct = (enemy_t*) malloc( (maxEnemies+1) * sizeof(enemy_t) ); //initialize. The +1 fixes a memory issue i guess
 	
 	//these should probably be stored in a struct but too bad
-	string filePath = "../../dinosprite/smaller/regular/";
+	if(isNight == true) {
+		string filePath = "Resources/smaller/inverted/";
+	}
+	else {
+		string filePath = "Resources/smaller/regular/";
+	}
 	string fileName[] = {"cacti_single_large.png", "cacti_single_small.png", "cacti_2x_large.png", "cacti_2x_small.png", "cacti_quad.png", "cacti_trio.png", "bird_1.png", "bird_2.png"};
 	float thresholds[] = {0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287, 0.0119287}; 
 	
@@ -198,10 +202,7 @@ enemy_t * getEnemy(Mat Img, float tolerance, bool isNight, int maxEnemies) {
 				enemyStruct[enemyNumber].y =  (uint32_t) EnemyLoc[i].at(j).y;
 				enemyStruct[enemyNumber].ID = (uint32_t) i;
 				enemyNumber++;
-				cout << "enemynumber: " << enemyNumber << endl;
 			}
-			else
-				cout << "Too many items on screen!!";
 		}
 	}
 	
@@ -225,9 +226,9 @@ uint32_t dinoHeight(Mat Img, bool isNight) {
 	
 	string filePath;
 	if (isNight == true)
-		filePath = "../../dinosprite/smaller/inverted/dino_nofeet.png";
+		filePath = "Resources/smaller/inverted/dino_head.png";
 	else
-		filePath = "../../dinosprite/smaller/regular/dino_nofeet.png";
+		filePath = "Resources/smaller/regular/dino_head.png";
 	
 	Mat dinoTemplate = imread(filePath, IMREAD_GRAYSCALE); //read the sprite
 	
