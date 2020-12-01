@@ -10,6 +10,12 @@ do
     esac
 done
 
+# chick for dinolib.so
+if [ ! -f "dinolib.so" ]; then
+    echo "dinolib.so not found. Try runing make command"
+    exit
+fi
+
 # number of instances
 rootDisplay=$DISPLAY
 
@@ -50,7 +56,7 @@ do
     google-chrome-stable --display=:$i --incognito --user-data-dir=/tmp/$USER/dino/$i --no-first-run &>> log.txt &
 done
 
-sleep 15
+sleep 5
 read -p "Press enter to continue when all chrome windows are loaded."
 
 python3 ./dinoai.py $N $firstX
