@@ -6,7 +6,7 @@
 
 #include "inputlib.h"
 
-#define OBS_SIZE 15 //4 enemies * 3 fields per enemy + 1 for height + 1 for score = 15
+#define OBS_SIZE 14 //4 enemies * 3 fields per enemy + 1 for height + 1 for score = 14
 
 namespace envlib{
 
@@ -29,7 +29,7 @@ namespace envlib{
         private:
             Display *_display;
             Window _window;
-            uint8_t _img[HEIGHT][WIDTH];
+            uint8_t *_img;
     };
 
 }

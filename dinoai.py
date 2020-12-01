@@ -1,5 +1,5 @@
 from translator import *
-import dinobrain
+#import dinobrain
 import time
 import sys
 
@@ -24,10 +24,11 @@ pyhandlerInit( N, firstDisplay )
 
 time.sleep(5)
 
-print( pyhandlerGetObservation(1) ) 
+#print( pyhandlerGetObservation(1) ) 
 
 # jump forever
 while 1:
     for i in range(N):
         pyhandlerSetAction(i, 1) # up
         pyhandlerSetAction(i, 0) # none
+        print(pyhandlerGetObservation(1))

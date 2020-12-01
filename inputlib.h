@@ -22,22 +22,17 @@
 
 namespace inputlib{
 
-    // hello world function (to check if this library got loaded correctly)
-    void inputlib();
-
     // externally called
     int initWindow(Display *display, Window window);
-    int getScreenshot(Display *display, Window window, uint8_t img[HEIGHT][WIDTH]);
+    int getScreenshot(Display *display, Window window, uint8_t *img);
 
     // internally called
-    int image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH]);
-    int writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsigned int h, char *filename);
+    int image2ByteArray(XImage *xImg, uint8_t *img);
+    int writeImage2csv(uint8_t *img, const unsigned int w, const unsigned int h, char *filename);
     void typeString(Display *display, char *str);
     void tapKey(Display *display, KeySym key);
     void pressKey(Display *display, KeySym key);
     void releaseKey(Display *display, KeySym key);
-
-    void writeXImage2csv(XImage *img, char *filename);
     
 }
 

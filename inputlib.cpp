@@ -14,11 +14,6 @@
 
 #include "inputlib.h"
 
-#define MAX_INSTANCES 50
-
-#define WIDTH 600
-#define HEIGHT 150
-
 using namespace std;
 
 int inputlib::initWindow(Display *display, Window window){
@@ -52,24 +47,24 @@ int inputlib::initWindow(Display *display, Window window){
     return 0;
 }
 
-int inputlib::getScreenshot(Display *display, Window window, uint8_t img[HEIGHT][WIDTH]){
-    XImage *xImg;
-    xImg = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
+int inputlib::getScreenshot(Display *display, Window window, uint8_t *img){
+    //XImage *xImg;
+    //xImg = XGetImage(display, window, 0, 0, WIDTH, HEIGHT, AllPlanes, XYPixmap);
 
-    image2ByteArray(xImg, img);
+    //image2ByteArray(xImg, img);
 
     return 0;
 }
 
-int inputlib::image2ByteArray(XImage *xImg, uint8_t img[HEIGHT][WIDTH]){
+int inputlib::image2ByteArray(XImage *xImg, uint8_t *img){
     for(int y = 0; y < xImg->height; y++)
         for(int x = 0; x < xImg->width; x++)
-            img[y][x] = (uint8_t)(XGetPixel(xImg, x, y) & xImg->blue_mask);
+             *(img + y*WIDTH + x) = (uint8_t)(XGetPixel(xImg, x, y) & xImg->blue_mask);
 
     return 0; // success
 }
 
-int inputlib::writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, const unsigned int h, char *filename){
+int inputlib::writeImage2csv(uint8_t *img, const unsigned int w, const unsigned int h, char *filename){
     FILE *fh = fopen(filename,"w+");
 
     if (fh == NULL)
@@ -82,10 +77,10 @@ int inputlib::writeImage2csv(uint8_t img[HEIGHT][WIDTH], const unsigned int w, c
     {
         for(unsigned int x = 0; x < w - 1; x++)
         {
-            fprintf(fh, "%d,", img[y][x]);
+            fprintf(fh, "%d,",  *(img + y*WIDTH + x));
         }
 
-        fprintf(fh, "%d\n", img[y][w-1]);
+        fprintf(fh, "%d\n",  *(img + y*WIDTH + w-1));
     }
 
     fclose(fh);
@@ -125,24 +120,4 @@ void inputlib::releaseKey(Display *display, KeySym key){
     // Simulate the keypress
     XTestFakeKeyEvent(display, sym, 0, 0); // release
     XFlush(display);
-}
-
-void inputlib::writeXImage2csv(XImage *img, char *filename){
-    FILE *fh = fopen(filename,"w+");
-
-    for(int y = 0; y < img->height; y++)
-    {
-        for(int x = 0; x < img->width - 1; x++)
-        {
-            fprintf(fh, "%d,", (uint8_t)(XGetPixel(img, x, y) & img->blue_mask));
-        }
-
-        fprintf(fh, "%d\n", (uint8_t)(XGetPixel(img, img->width - 1, y) & img->blue_mask));
-    }
-
-    fclose(fh);
-}
-
-void inputlib::inputlib(){
-    cout << "Hello from inputlib" << endl;
 }

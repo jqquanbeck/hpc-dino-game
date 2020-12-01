@@ -6,13 +6,6 @@ using namespace envlib;
 using namespace inputlib;
 using namespace std;
 
-// void envlib::envlib(int out[3]){
-//     out[0] = 100;
-//     out[1] = 200;
-//     out[2] = 300;
-//     cout << "Hello from envlib" << endl;
-// }
-
 envlib::dinoInterface::dinoInterface(int dispId){
     printf("---------------- %d constructor ---------------\n", dispId);
 
@@ -49,6 +42,9 @@ envlib::dinoInterface::dinoInterface(int dispId){
     _window = children[3];
 
     initWindow(_display, _window);
+
+    // allocate memory for _img
+    _img = (uint8_t*)malloc(HEIGHT * WIDTH * sizeof(uint8_t));
 }
 
 envlib::dinoInterface::dinoInterface(const dinoInterface &old){
@@ -58,19 +54,10 @@ envlib::dinoInterface::dinoInterface(const dinoInterface &old){
 envlib::dinoInterface::~dinoInterface(){
     // close connection to x display
     XCloseDisplay(_display);
+    free(_img);
 }
 
-/*
-int envlib::dinoInterface::getScore(uint32_t &score){
-    getScreenshot(_display, _window, _img);
-
-    score = 10; // temp arbitrary value
-
-    return 0; // success
-}
-*/
-
-int envlib::dinoInterface::getObservation(uint32_t obs[15]){
+int envlib::dinoInterface::getObservation(uint32_t obs[OBS_SIZE]){
 
     getScreenshot(_display, _window, _img);
 
